@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Recursos Católicos</string>
+    <string name="siguiente_versiculo">Siguiente versiculo\n</string>
+    <string name="versiculo_de_la_biblia">Versiculo de la biblia\n</string>
+    <string name="angelus">Señal de la cruz: \n\nEl ángel del Señor anunció a María. Y concibió por obra del Espíritu Santo.\n\nHe aquí la sierva del Señor. Hágase en mí según tu palabra.</string>
+    <string name="bendicion_alimentos">Bendice, Señor, estos alimentos y danos salud y fuerza para servirte. Amén.</string>
+    <string name="rosario">Rosario</string>
+    <string name="gloria">Gloria al Padre, al hijo y al espiritu santo \n Como era en un principio, ahora y siembre, por los siglos de los siglos. \n Amen</string>
+    <string name="padre_nuestro">Padre nuestro, que estas en los cielos, santificado sea tu nombre.\n Venga a nosotros tu reino. \n Hagase tu voluntad en la tierra como en el cielo. \n Danos hoy nuestro pan de cada dia. \n Perdona nuestras ofensas, asi como nosotros perdonamos a los que nos ofenden.\n No nos dejes caer en la tentacion. \n Y libranos del mal \n AMEN</string>
+    <string name="evangelio_de_dia">Evangeline de día</string>
+    <string name="noche_contenido">Contenido de la noche</string>
+    <string name="siguiente_oracion">Siguiente Oracion</string>
+    <string name="avanzar">Avanzar</string>
+    <string name="rebobinar">Rebobinar</string>
+    <string name="ave_maria">Dios te salve María\\n\nllena eres de gracia\\n\nEl Señor es contigo\\n\nBendita tu eres entre todas las mujeres\\n\ny bendito es el fruto de tu vientre Jesús \\n\\n\nSanta Maria, Madre de Dios\\n\nRuega por nosotros pecadores\\n\nAhora y en la hora de nuestra muerte\\n\\n\nAMEN</string>
+    <string name="misterios_gozosos">Misterios Gozosos</string>
+    <string name="_1_misterio_la_anunciacion">1º Misterio: La Anunciación</string>
+
+
+    <!-- Libros de la Biblia -->
+
+    <!-- San Juan -->
+    <string-array name="san_juan_chapter_1">
+        <item>En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios. - Juan 1:1</item>
+        <item>Y aquel Verbo fue hecho carne, y habitó entre nosotros (y vimos su gloria, gloria como del unigénito del Padre), lleno de gracia y de verdad. - Juan 1:14</item>
+    </string-array>
+
+    <string-array name="san_juan_chapter_3">
+        <item>Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna. - Juan 3:16</item>
+    </string-array>
+
+    <!-- San Lucas -->
+    <string-array name="san_lucas_chapter_1">
+        <item>Y respondiendo el ángel, le dijo: El Espíritu Santo vendrá sobre ti, y el poder del Altísimo te cubrirá con su sombra; por lo cual también el Santo Ser que nacerá, será llamado Hijo de Dios. - Lucas 1:35</item>
+    </string-array>
+
+    <string-array name="san_lucas_chapter_2">
+        <item>Gloria a Dios en las alturas, Y en la tierra paz, buena voluntad para con los hombres. - Lucas 2:14</item>
+    </string-array>
+
+    <!-- Génesis -->
+    <string-array name="genesis_chapter_1">
+        <item>En el principio creó Dios los cielos y la tierra. - Génesis 1:1</item>
+    </string-array>
+
+    <!-- Salmos -->
+    <string-array name="salmos_chapter_23">
+        <item>El Señor es mi pastor; nada me faltará. - Salmo 23:1</item>
+    </string-array>
+
+    <string-array name="salmos_chapter_91">
+        <item>El que habita al abrigo del Altísimo morará bajo la sombra del Omnipotente. - Salmo 91:1</item>
+    </string-array>
+
+    <!-- Rosario -->
+    <string name="intro_en_el_nombre">En el nombre del Padre, \n del Hijo \n y del Espíritu Santo. \n Amén.</string>
+    <string name="intro_padrenuestro_intencion_papa">Padrenuestro \n (por las intenciones del Papa)</string>
+    <string name="intro_ave_maria_1">Ave María (1/3)</string>
+    <string name="intro_ave_maria_2">Ave María (2/3)</string>
+    <string name="intro_ave_maria_3">Ave María (3/3)</string>
+    <string name="intro_gloria">Gloria al Padre, al hijo y al Espíritu Santo \n como era en el principio, ahora y siempre, por los siglos de los siglos. \n Amén.</string>
+
+    <string name="decada_padrenuestro_parte1">Padrenuestro, que estas en el cielo, santificado sea tu nombre. \n Venga tu reino. \n Hágase tu voluntad, así en la tierra como en el cielo.</string>
+    <string name="decada_padrenuestro_parte2">Danos hoy el pan nuestro de cada día. \n Perdona nuestras ofensas, así como nosotros perdonamos a los que nos ofenden. \n No nos dejes caer en la tentación y líbranos de mal.</string>
+    <string name="decada_ave_maria">Ave María</string>
+    <string name="decada_gloria">Gloria al Padre, al hijo y al Espíritu Santo \n como era en el principio, ahora y siempre, por los siglos de los siglos. \n Amén.</string>
+    <string name="decada_jaculatoria_ns_rosario">Nuestra señora del Rosario, \n ruega por nosotros.</string>
+    <string name="decada_jaculatoria_santo_rosario">Santo Rosario, \n ruega por nosotros.</string>
+
+    <string name="conclusion_salve_regina">Salve Regina</string>
+    <string name="conclusion_oracion_final">Oración final: Ruega por nosotros Santa Madre de Dios, \n para que seamos dignos de alcanzar las promesas de nuestro Señor Jesucristo.</string>
+
+    <string name="gozoso_1_meditacion">Lucas 1,26-38: El ángel Gabriel fue enviado a María para anunciarle que concebiría a Jesús por obra del Espíritu Santo. María aceptó: «He aquí la esclava del Señor; hágase en mí según tu palabra.»</string>
+    <string name="gozoso_2_meditacion">Lucas 1,39-56: María visitó a su prima Isabel, quien, llena del Espíritu Santo, la reconoció como la Madre de su Señor. María proclamó el Magníficat.</string>
+    <string name="gozoso_3_meditacion">Lucas 2,1-20: Jesús nació en Belén en un pesebre. Ángeles anunciaron a los pastores: «Hoy os ha nacido un Salvador, que es el Mesías, el Señor.»</string>
+    <string name="gozoso_4_meditacion">Lucas 2,22-40: María y José presentaron a Jesús en el Templo. Simeón profetizó sobre el Niño y María: «Una espada te traspasará el alma.»</string>
+    <string name="gozoso_5_meditacion">Lucas 2,41-52: Jesús, de doce años, se quedó en el Templo, conversando con los maestros. María y José lo encontraron, y Él les dijo: «¿No sabíais que debía estar en la casa de mi Padre?»</string>
+
+    <string name="doloroso_1_meditacion">Mateo 26,36-46: Jesús oró en Getsemaní, angustiado hasta la muerte, y aceptó la voluntad del Padre: «No se haga mi voluntad, sino la tuya.»</string>
+    <string name="doloroso_2_meditacion">Juan 19,1-3: Pilato hizo flagelar a Jesús. Los soldados lo azotaron cruelmente y se burlaron de Él.</string>
+    <string name="doloroso_3_meditacion">Marcos 15,16-20: Los soldados vistieron a Jesús de púrpura, le tejieron una corona de espinas y se la pusieron, burlándose de Él.</string>
+    <string name="doloroso_4_meditacion">Juan 19,17: Jesús cargó su propia cruz y salió hacia el lugar llamado la Calavera, en su camino al Calvario.</string>
+    <string name="doloroso_5_meditacion">Juan 19,25-30: Jesús fue crucificado. Desde la cruz, entregó a su madre a Juan. Después de decir «Todo está cumplido», inclinó la cabeza y entregó el espíritu.</string>
+
+    <string name="glorioso_1_meditacion">Juan 20,1-10: Jesús resucitó al tercer día, venciendo a la muerte. Los discípulos encontraron el sepulcro vacío y creyeron.</string>
+    <string name="glorioso_2_meditacion">Hechos 1,6-11: Jesús ascendió al cielo ante sus discípulos. Dos ángeles anunciaron: «Este Jesús volverá del mismo modo que lo habéis visto ir al cielo.»</string>
+    <string name="glorioso_3_meditacion">Hechos 2,1-13: El Espíritu Santo descendió sobre los apóstoles y María en Pentecostés, capacitándolos para proclamar el Evangelio en todas las lenguas.</string>
+    <string name="glorioso_4_meditacion">Apocalipsis 12,14: María fue llevada al cielo en cuerpo y alma. Es figura de la Iglesia que un día también participará plenamente de la gloria de Cristo.</string>
+    <string name="glorioso_5_meditacion">Apocalipsis 12,1: María, asunta al cielo, fue coronada como Reina del universo, con una corona de doce estrellas, el sol y la luna bajo sus pies.</string>
+
+    <string name="luminoso_1_meditacion">Mateo 3,13-17: Jesús fue bautizado por Juan en el Jordán. Se abrió el cielo y el Espíritu Santo descendió sobre Él, y se oyó la voz del Padre: «Este es mi Hijo amado.»</string>
+    <string name="luminoso_2_meditacion">Juan 2,1-11: En las bodas de Caná, Jesús convirtió el agua en vino a petición de María, manifestando su gloria y creyendo en Él sus discípulos.</string>
+    <string name="luminoso_3_meditacion">Marcos 1,14-15: Jesús proclamó el Reino de Dios: «Convertíos y creed en el Evangelio.» Invitó a la penitencia y al seguimiento de su Palabra.</string>
+    <string name="luminoso_4_meditacion">Lucas 9,28-36: Jesús se transfiguró en el monte, revelando su gloria a Pedro, Santiago y Juan. Moisés y Elías aparecieron, y el Padre dijo: «Este es mi Hijo, el Elegido; escuchadle.»</string>
+    <string name="luminoso_5_meditacion">Lucas 22,19-20: Jesús instituyó la Eucaristía en la Última Cena, dando su Cuerpo y Sangre como alimento y memorial de su sacrificio por nosotros.</string>
+
+</resources>

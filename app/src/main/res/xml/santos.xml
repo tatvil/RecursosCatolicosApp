@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<calendario_santos>
+    <!-- Enero -->
+    <dia mes="1" numero="1" santo="Santa María, Madre de Dios"/>
+    <dia mes="1" numero="2" santo="San Basilio Magno"/>
+    <dia mes="1" numero="3" santo="Santo Genaro"/>
+    <dia mes="1" numero="4" santo="San Gregorio Nacianceno"/>
+    <dia mes="1" numero="5" santo="San Juan Nepomuceno Neumann"/>
+    <dia mes="1" numero="6" santo="Epifanía del Señor"/>
+    <dia mes="1" numero="7" santo="San Raimundo de Peñafort"/>
+    <dia mes="1" numero="8" santo="San Apolonio"/>
+    <dia mes="1" numero="9" santo="San Julián"/>
+    <dia mes="1" numero="10" santo="San Guillermo de Bourges"/>
+    <dia mes="1" numero="11" santo="San Hortensio"/>
+    <dia mes="1" numero="12" santo="San Arcadio"/>
+    <dia mes="1" numero="13" santo="Santa Hildegarda"/>
+    <dia mes="1" numero="14" santo="San Félix"/>
+    <dia mes="1" numero="15" santo="San Pablo de la Cruz"/>
+    <dia mes="1" numero="16" santo="San Marcelo"/>
+    <dia mes="1" numero="17" santo="San Antonio Abad"/>
+    <dia mes="1" numero="18" santo="San Pedro Sinodal"/>
+    <dia mes="1" numero="19" santo="San Mario"/>
+    <dia mes="1" numero="20" santo="San Fabián"/>
+    <dia mes="1" numero="21" santo="San Inocencio"/>
+    <dia mes="1" numero="22" santo="San Vicente"/>
+    <dia mes="1" numero="23" santo="San Ildefonso"/>
+    <dia mes="1" numero="24" santo="San Francisco de Sales"/>
+    <dia mes="1" numero="25" santo="Conversión de San Pablo"/>
+    <dia mes="1" numero="26" santo="Santos Timoteo y Tito"/>
+    <dia mes="1" numero="27" santo="San Angélico"/>
+    <dia mes="1" numero="28" santo="San Tomás de Aquino"/>
+    <dia mes="1" numero="29" santo="San Francisco de Sales"/>
+    <dia mes="1" numero="30" santo="San Martina"/>
+    <dia mes="1" numero="31" santo="San Juan Bosco"/>
+
+    <!-- Febrero -->
+    <dia mes="2" numero="1" santo="Santa Brígida"/>
+    <dia mes="2" numero="2" santo="Presentación del Señor"/>
+    <dia mes="2" numero="3" santo="San Blas"/>
+    <dia mes="2" numero="4" santo="Santa Joaquina"/>
+    <dia mes="2" numero="5" santo="San Agustín"/>
+    <dia mes="2" numero="6" santo="San Pablo Miki"/>
+    <dia mes="2" numero="7" santo="San Teodoro"/>
+    <dia mes="2" numero="8" santo="Santa Josefina"/>
+    <dia mes="2" numero="9" santo="Santa Apolonia"/>
+    <dia mes="2" numero="10" santo="San Eustaquio"/>
+    <dia mes="2" numero="11" santo="Nuestra Señora de Lourdes"/>
+    <dia mes="2" numero="12" santo="San Benito José Labre"/>
+    <dia mes="2" numero="13" santo="Santa Catalina de Ricci"/>
+    <dia mes="2" numero="14" santo="San Valentín"/>
+    <dia mes="2" numero="15" santo="San Claudio"/>
+    <dia mes="2" numero="16" santo="Santos Julián y Félix"/>
+    <dia mes="2" numero="17" santo="San Alejo"/>
+    <dia mes="2" numero="18" santo="Santa Simeón"/>
+    <dia mes="2" numero="19" santo="San Conrado"/>
+    <dia mes="2" numero="20" santo="San Eleuterio"/>
+    <dia mes="2" numero="21" santo="San Pedro Damian"/>
+    <dia mes="2" numero="22" santo="Cátedra de San Pedro"/>
+    <dia mes="2" numero="23" santo="San Policarpo"/>
+    <dia mes="2" numero="24" santo="San Modesto"/>
+    <dia mes="2" numero="25" santo="San Román"/>
+    <dia mes="2" numero="26" santo="San Alejandro"/>
+    <dia mes="2" numero="27" santo="San Gabriel"/>
+    <dia mes="2" numero="28" santo="San Osvaldo"/>
+    <dia mes="2" numero="29" santo="San Osvaldo (si es bisiesto)"/>
+
+    <!-- Marzo -->
+    <dia mes="3" numero="1" santo="San David"/>
+    <dia mes="3" numero="2" santo="San Simón"/>
+    <dia mes="3" numero="3" santo="San Albino"/>
+    <dia mes="3" numero="4" santo="San Casimiro"/>
+    <dia mes="3" numero="5" santo="San Adrián"/>
+    <dia mes="3" numero="6" santo="San Coleta"/>
+    <dia mes="3" numero="7" santo="Santos Perpetua y Felicidad"/>
+    <dia mes="3" numero="8" santo="San Juan de Dios"/>
+    <dia mes="3" numero="9" santo="San Francesc de Paula"/>
+    <dia mes="3" numero="10" santo="San Macario"/>
+    <dia mes="3" numero="11" santo="San Eulogio"/>
+    <dia mes="3" numero="12" santo="San Gregorio"/>
+    <dia mes="3" numero="13" santo="San Rodrigo"/>
+    <dia mes="3" numero="14" santo="San Matías"/>
+    <dia mes="3" numero="15" santo="San Longino"/>
+    <dia mes="3" numero="16" santo="Santa Juana"/>
+    <dia mes="3" numero="17" santo="San Patricio"/>
+    <dia mes="3" numero="18" santo="San Cirilo"/>
+    <dia mes="3" numero="19" santo="San José"/>
+    <dia mes="3" numero="20" santo="San Nicolás"/>
+    <dia mes="3" numero="21" santo="San Benedetto"/>
+    <dia mes="3" numero="22" santo="San Lea"/>
+    <dia mes="3" numero="23" santo="San Toribio"/>
+    <dia mes="3" numero="24" santo="San Gabriel"/>
+    <dia mes="3" numero="25" santo="Anunciación del Señor"/>
+    <dia mes="3" numero="26" santo="San Trifón"/>
+    <dia mes="3" numero="27" santo="San Ruperto"/>
+    <dia mes="3" numero="28" santo="San Guntrán"/>
+    <dia mes="3" numero="29" santo="San Amando"/>
+    <dia mes="3" numero="30" santo="San Juan Climaco"/>
+    <dia mes="3" numero="31" santo="San Balduino"/>
+
+
+
+    <!-- Abril -->
+    <dia mes="4" numero="1" santo="San Hugo"/>
+    <dia mes="4" numero="2" santo="Santos Francisco y Jacinta Marto"/>
+    <dia mes="4" numero="3" santo="San Ricardo"/>
+    <dia mes="4" numero="4" santo="San Isidoro de Sevilla"/>
+    <dia mes="4" numero="5" santo="San Vicente Ferrer"/>
+    <dia mes="4" numero="6" santo="San Marcelino"/>
+    <dia mes="4" numero="7" santo="San Juan Bautista de la Salle"/>
+    <dia mes="4" numero="8" santo="San Dionisio"/>
+    <dia mes="4" numero="9" santo="San Casiano"/>
+    <dia mes="4" numero="10" santo="San Macario"/>
+    <dia mes="4" numero="11" santo="San Estanislao"/>
+    <dia mes="4" numero="12" santo="San Zenón"/>
+    <dia mes="4" numero="13" santo="Santa Ida"/>
+    <dia mes="4" numero="14" santo="San Maximiliano M. Kolbe"/>
+    <dia mes="4" numero="15" santo="San León IX"/>
+    <dia mes="4" numero="16" santo="Santa Bernadette"/>
+    <dia mes="4" numero="17" santo="San Aniceto"/>
+    <dia mes="4" numero="18" santo="San Leonardo"/>
+    <dia mes="4" numero="19" santo="San Expeditus"/>
+    <dia mes="4" numero="20" santo="San Ciro"/>
+    <dia mes="4" numero="21" santo="San Anselmo"/>
+    <dia mes="4" numero="22" santo="San Soter"/>
+    <dia mes="4" numero="23" santo="San Jorge"/>
+    <dia mes="4" numero="24" santo="San Fidel de Sigmaringa"/>
+    <dia mes="4" numero="25" santo="San Marcos Evangelista"/>
+    <dia mes="4" numero="26" santo="San Marcelino"/>
+    <dia mes="4" numero="27" santo="Santa Zita"/>
+    <dia mes="4" numero="28" santo="San Pedro Chanel"/>
+    <dia mes="4" numero="29" santo="San Pedro de Verona"/>
+    <dia mes="4" numero="30" santo="San Pío V"/>
+
+    <!-- Mayo -->
+    <dia mes="5" numero="1" santo="San José Obrero"/>
+    <dia mes="5" numero="2" santo="San Atanasio"/>
+    <dia mes="5" numero="3" santo="Santos Felipe y Santiago"/>
+    <dia mes="5" numero="4" santo="San Florencio"/>
+    <dia mes="5" numero="5" santo="San Antonino"/>
+    <dia mes="5" numero="6" santo="San Juan de Ávila"/>
+    <dia mes="5" numero="7" santo="San Stanislao Kostka"/>
+    <dia mes="5" numero="8" santo="San Pedro Celestino"/>
+    <dia mes="5" numero="9" santo="San Gregorio de Narek"/>
+    <dia mes="5" numero="10" santo="San Juan de Avila"/>
+    <dia mes="5" numero="11" santo="San Mamerto"/>
+    <dia mes="5" numero="12" santo="Santa Nereida"/>
+    <dia mes="5" numero="13" santo="Nuestra Señora de Fátima"/>
+    <dia mes="5" numero="14" santo="San Matías"/>
+    <dia mes="5" numero="15" santo="San Isidro Labrador"/>
+    <dia mes="5" numero="16" santo="San Juan Nepomuceno"/>
+    <dia mes="5" numero="17" santo="San Pasquale Baylon"/>
+    <dia mes="5" numero="18" santo="San Venancio"/>
+    <dia mes="5" numero="19" santo="San Celestino"/>
+    <dia mes="5" numero="20" santo="San Bernardino de Siena"/>
+    <dia mes="5" numero="21" santo="San Cristóbal Magallanes"/>
+    <dia mes="5" numero="22" santo="San Rita de Casia"/>
+    <dia mes="5" numero="23" santo="San Juan Bautista de Rossi"/>
+    <dia mes="5" numero="24" santo="San Gregorio VII"/>
+    <dia mes="5" numero="25" santo="San Beda"/>
+    <dia mes="5" numero="26" santo="San Felipe Neri"/>
+    <dia mes="5" numero="27" santo="San Agustín de Canterbury"/>
+    <dia mes="5" numero="28" santo="San Germán"/>
+    <dia mes="5" numero="29" santo="San Maximino"/>
+    <dia mes="5" numero="30" santo="San Fernando"/>
+    <dia mes="5" numero="31" santo="Visitación de la Virgen María"/>
+
+    <!-- Junio -->
+    <dia mes="6" numero="1" santo="San Justino"/>
+    <dia mes="6" numero="2" santo="San Marcelino"/>
+    <dia mes="6" numero="3" santo="San Carlos Lwanga"/>
+    <dia mes="6" numero="4" santo="San Francisco Caracciolo"/>
+    <dia mes="6" numero="5" santo="San Bonifacio"/>
+    <dia mes="6" numero="6" santo="San Norberto"/>
+    <dia mes="6" numero="7" santo="San Roberto"/>
+    <dia mes="6" numero="8" santo="Santas Matilde y José"/>
+    <dia mes="6" numero="9" santo="San Efrén"/>
+    <dia mes="6" numero="10" santo="San Margareta"/>
+    <dia mes="6" numero="11" santo="San Bernabé Apóstol"/>
+    <dia mes="6" numero="12" santo="San Juan de San Facundo"/>
+    <dia mes="6" numero="13" santo="San Antonio de Padua"/>
+    <dia mes="6" numero="14" santo="San Basilio Magno"/>
+    <dia mes="6" numero="15" santo="San Vito"/>
+    <dia mes="6" numero="16" santo="San Benedicto M. Labre"/>
+    <dia mes="6" numero="17" santo="San Alejandro"/>
+    <dia mes="6" numero="18" santo="San Gregorio Barbarigo"/>
+    <dia mes="6" numero="19" santo="San Romualdo"/>
+    <dia mes="6" numero="20" santo="San Silverio"/>
+    <dia mes="6" numero="21" santo="San Luis Gonzaga"/>
+    <dia mes="6" numero="22" santo="Santa Paulina"/>
+    <dia mes="6" numero="23" santo="San José Cafasso"/>
+    <dia mes="6" numero="24" santo="Natividad de San Juan Bautista"/>
+    <dia mes="6" numero="25" santo="San Guillermo"/>
+    <dia mes="6" numero="26" santo="San Josemaría Escrivá"/>
+    <dia mes="6" numero="27" santo="San Cirilo de Alejandría"/>
+    <dia mes="6" numero="28" santo="San Ireneo"/>
+    <dia mes="6" numero="29" santo="San Pedro y San Pablo Apóstoles"/>
+    <dia mes="6" numero="30" santo="San Prudencio"/>
+
+    <!-- Julio -->
+    <dia mes="7" numero="1" santo="San Aarón"/>
+    <dia mes="7" numero="2" santo="Santa María Goretti"/>
+    <dia mes="7" numero="3" santo="Santos Tomás y Juan"/>
+    <dia mes="7" numero="4" santo="San Isabel de Portugal"/>
+    <dia mes="7" numero="5" santo="San Antonio María Zaccaria"/>
+    <dia mes="7" numero="6" santo="San María Goretti"/>
+    <dia mes="7" numero="7" santo="San Ciril de Alejandría"/>
+    <dia mes="7" numero="8" santo="San Juan María Vianney"/>
+    <dia mes="7" numero="9" santo="San Agustín Zhao Rong"/>
+    <dia mes="7" numero="10" santo="San Benito"/>
+    <dia mes="7" numero="11" santo="San Buenaventura"/>
+    <dia mes="7" numero="12" santo="San Francisco Solano"/>
+    <dia mes="7" numero="13" santo="San Enrique"/>
+    <dia mes="7" numero="14" santo="San Camilo de Lelis"/>
+    <dia mes="7" numero="15" santo="Santa Buenaventura"/>
+    <dia mes="7" numero="16" santo="Nuestra Señora del Carmen"/>
+    <dia mes="7" numero="17" santo="San Alejo"/>
+    <dia mes="7" numero="18" santo="San Federico"/>
+    <dia mes="7" numero="19" santo="San Justino"/>
+    <dia mes="7" numero="20" santo="San Elías"/>
+    <dia mes="7" numero="21" santo="Santa Verónica Giuliani"/>
+    <dia mes="7" numero="22" santo="Santa María Magdalena"/>
+    <dia mes="7" numero="23" santo="San Brigida"/>
+    <dia mes="7" numero="24" santo="San Cristóbal de Licia"/>
+    <dia mes="7" numero="25" santo="Santiago Apóstol"/>
+    <dia mes="7" numero="26" santo="San Joaquín y Santa Ana"/>
+    <dia mes="7" numero="27" santo="San Pantaleón"/>
+    <dia mes="7" numero="28" santo="San León IX"/>
+    <dia mes="7" numero="29" santo="San Marta"/>
+    <dia mes="7" numero="30" santo="Santa Margarita de Antioquía"/>
+    <dia mes="7" numero="31" santo="San Ignacio de Loyola"/>
+
+    <!-- Agosto -->
+    <dia mes="8" numero="1" santo="Santa Alfonsa"/>
+    <dia mes="8" numero="2" santo="Santa Eusebia"/>
+    <dia mes="8" numero="3" santo="Santa Lidia"/>
+    <dia mes="8" numero="4" santo="San Juan María Vianney"/>
+    <dia mes="8" numero="5" santo="Dedicatoria de la Basílica de Santa María la Mayor"/>
+    <dia mes="8" numero="6" santo="Transfiguración del Señor"/>
+    <dia mes="8" numero="7" santo="San Cayetano"/>
+    <dia mes="8" numero="8" santo="San Domenico"/>
+    <dia mes="8" numero="9" santo="Santa Teresa Benedicta de la Cruz"/>
+    <dia mes="8" numero="10" santo="San Lorenzo"/>
+    <dia mes="8" numero="11" santo="Santa Clara de Asís"/>
+    <dia mes="8" numero="12" santo="San Maximiliano Kolbe"/>
+    <dia mes="8" numero="13" santo="San Hipólito"/>
+    <dia mes="8" numero="14" santo="San Eusebio"/>
+    <dia mes="8" numero="15" santo="Asunción de la Virgen María"/>
+    <dia mes="8" numero="16" santo="San Esteban de Hungría"/>
+    <dia mes="8" numero="17" santo="San Jacinto"/>
+    <dia mes="8" numero="18" santo="San Alberto Magno"/>
+    <dia mes="8" numero="19" santo="San Juan Eudes"/>
+    <dia mes="8" numero="20" santo="San Bernardo"/>
+    <dia mes="8" numero="21" santo="San Pío X"/>
+    <dia mes="8" numero="22" santo="La Coronación de la Virgen María"/>
+    <dia mes="8" numero="23" santo="San Rosa de Lima"/>
+    <dia mes="8" numero="24" santo="San Bartolomé Apóstol"/>
+    <dia mes="8" numero="25" santo="San Luis IX"/>
+    <dia mes="8" numero="26" santo="San Bernardo de Claraval"/>
+    <dia mes="8" numero="27" santo="San Alfonso María de Ligorio"/>
+    <dia mes="8" numero="28" santo="San Agustín de Hipona"/>
+    <dia mes="8" numero="29" santo="Martirio de San Juan Bautista"/>
+    <dia mes="8" numero="30" santo="Santa Rosa de Lima"/>
+    <dia mes="8" numero="31" santo="San Raimundo de Peñafort"/>
+
+    <!-- Septiembre -->
+    <dia mes="9" numero="1" santo="Santa María de la Cabeza"/>
+    <dia mes="9" numero="2" santo="San Antígono"/>
+    <dia mes="9" numero="3" santo="San Gregorio Magno"/>
+    <dia mes="9" numero="4" santo="Santa Rosalia"/>
+    <dia mes="9" numero="5" santo="San Teresa de Calcuta"/>
+    <dia mes="9" numero="6" santo="San Zacarías"/>
+    <dia mes="9" numero="7" santo="San Regino"/>
+    <dia mes="9" numero="8" santo="Natividad de la Virgen María"/>
+    <dia mes="9" numero="9" santo="San Pedro Claver"/>
+    <dia mes="9" numero="10" santo="San Nicolás de Tolentino"/>
+    <dia mes="9" numero="11" santo="San Jenaro"/>
+    <dia mes="9" numero="12" santo="Santísimo Nombre de María"/>
+    <dia mes="9" numero="13" santo="San Juan Crisóstomo"/>
+    <dia mes="9" numero="14" santo="Exaltación de la Santa Cruz"/>
+    <dia mes="9" numero="15" santo="Nuestra Señora de los Dolores"/>
+    <dia mes="9" numero="16" santo="San Cornelio"/>
+    <dia mes="9" numero="17" santo="San Roberto Bellarmino"/>
+    <dia mes="9" numero="18" santo="San José de Cupertino"/>
+    <dia mes="9" numero="19" santo="San Gennaro"/>
+    <dia mes="9" numero="20" santo="San Andrés Kim"/>
+    <dia mes="9" numero="21" santo="San Mateo Apóstol"/>
+    <dia mes="9" numero="22" santo="San Maurcio"/>
+    <dia mes="9" numero="23" santo="San Pío de Pietrelcina"/>
+    <dia mes="9" numero="24" santo="Nuestra Señora de la Merced"/>
+    <dia mes="9" numero="25" santo="San Cleofás"/>
+    <dia mes="9" numero="26" santo="San Cosme y Damián"/>
+    <dia mes="9" numero="27" santo="San Vicente de Paúl"/>
+    <dia mes="9" numero="28" santo="San Wenceslao"/>
+    <dia mes="9" numero="29" santo="San Miguel Arcángel"/>
+    <dia mes="9" numero="30" santo="San Jerónimo"/>
+
+    <!-- Octubre -->
+    <dia mes="10" numero="1" santo="Santa Teresa del Niño Jesús"/>
+    <dia mes="10" numero="2" santo="Ángeles Custodios"/>
+    <dia mes="10" numero="3" santo="San Dionisio y compañeros"/>
+    <dia mes="10" numero="4" santo="San Francisco de Asís"/>
+    <dia mes="10" numero="5" santo="Santa Faustina Kowalska"/>
+    <dia mes="10" numero="6" santo="San Bruno"/>
+    <dia mes="10" numero="7" santo="Nuestra Señora del Rosario"/>
+    <dia mes="10" numero="8" santo="Santos Simón y Judas"/>
+    <dia mes="10" numero="9" santo="San Denis y compañeros"/>
+    <dia mes="10" numero="10" santo="San Frumencio"/>
+    <dia mes="10" numero="11" santo="San Juan XXIII"/>
+    <dia mes="10" numero="12" santo="Nuestra Señora de Guadalupe"/>
+    <dia mes="10" numero="13" santo="Santa Teresa de Jesús"/>
+    <dia mes="10" numero="14" santo="San Calixto I"/>
+    <dia mes="10" numero="15" santo="Santa Teresa de Lisieux"/>
+    <dia mes="10" numero="16" santo="Santa Margarita María Alacoque"/>
+    <dia mes="10" numero="17" santo="San Ignacio de Antioquía"/>
+    <dia mes="10" numero="18" santo="San Lucas Evangelista"/>
+    <dia mes="10" numero="19" santo="San Pablo de la Cruz"/>
+    <dia mes="10" numero="20" santo="San Juan de Capistrano"/>
+    <dia mes="10" numero="21" santo="San Hilarión"/>
+    <dia mes="10" numero="22" santo="San Juan Pablo II"/>
+    <dia mes="10" numero="23" santo="San Juan de Brébeuf"/>
+    <dia mes="10" numero="24" santo="San Antonio María Claret"/>
+    <dia mes="10" numero="25" santo="San Crispín y Crispiniano"/>
+    <dia mes="10" numero="26" santo="San Evaristo"/>
+    <dia mes="10" numero="27" santo="San Frumencio"/>
+    <dia mes="10" numero="28" santo="San Simón y Judas"/>
+    <dia mes="10" numero="29" santo="San Narciso"/>
+    <dia mes="10" numero="30" santo="San Terencio"/>
+    <dia mes="10" numero="31" santo="San Quintín"/>
+
+    <!-- Noviembre -->
+    <dia mes="11" numero="1" santo="Todos los Santos"/>
+    <dia mes="11" numero="2" santo="Conmemoración de los Fieles Difuntos"/>
+    <dia mes="11" numero="3" santo="San Martín de Porres"/>
+    <dia mes="11" numero="4" santo="San Carlos Borromeo"/>
+    <dia mes="11" numero="5" santo="San Bertoldo"/>
+    <dia mes="11" numero="6" santo="San Leonardo de Noblat"/>
+    <dia mes="11" numero="7" santo="San Engelberto"/>
+    <dia mes="11" numero="8" santo="San Godofredo"/>
+    <dia mes="11" numero="9" santo="San Teodoro"/>
+    <dia mes="11" numero="10" santo="San León Magno"/>
+    <dia mes="11" numero="11" santo="San Martín de Tours"/>
+    <dia mes="11" numero="12" santo="San Josafat"/>
+    <dia mes="11" numero="13" santo="Santa Lucía Filippini"/>
+    <dia mes="11" numero="14" santo="San Josémaría Escrivá"/>
+    <dia mes="11" numero="15" santo="San Alberto Magno"/>
+    <dia mes="11" numero="16" santo="San Gerardo Majella"/>
+    <dia mes="11" numero="17" santo="San Gregorio VII"/>
+    <dia mes="11" numero="18" santo="San Alberto de Sicilia"/>
+    <dia mes="11" numero="19" santo="San Eliseo"/>
+    <dia mes="11" numero="20" santo="San Félix de Valois"/>
+    <dia mes="11" numero="21" santo="Presentación de la Virgen María"/>
+    <dia mes="11" numero="22" santo="Santa Cecilia"/>
+    <dia mes="11" numero="23" santo="San Clemente I"/>
+    <dia mes="11" numero="24" santo="San Andrés Dung-Lac"/>
+    <dia mes="11" numero="25" santo="San Catalina de Alejandría"/>
+    <dia mes="11" numero="26" santo="San Leonardo de Porto Maurizio"/>
+    <dia mes="11" numero="27" santo="San Virgilio"/>
+    <dia mes="11" numero="28" santo="San Saturnino"/>
+    <dia mes="11" numero="29" santo="San Saturnino"/>
+    <dia mes="11" numero="30" santo="San Andrés"/>
+
+    <!-- Diciembre -->
+    <dia mes="12" numero="1" santo="Santa Eloísa"/>
+    <dia mes="12" numero="2" santo="San Bibiana"/>
+    <dia mes="12" numero="3" santo="San Francisco Javier"/>
+    <dia mes="12" numero="4" santo="San Juan Damasceno"/>
+    <dia mes="12" numero="5" santo="Santa Sabina"/>
+    <dia mes="12" numero="6" santo="San Nicolás"/>
+    <dia mes="12" numero="7" santo="San Ambrosio"/>
+    <dia mes="12" numero="8" santo="Inmaculada Concepción de María"/>
+    <dia mes="12" numero="9" santo="San Juan Diego"/>
+    <dia mes="12" numero="10" santo="Nuestra Señora de Loreto"/>
+    <dia mes="12" numero="11" santo="San Dámaso I"/>
+    <dia mes="12" numero="12" santo="Nuestra Señora de Guadalupe"/>
+    <dia mes="12" numero="13" santo="Santa Lucía"/>
+    <dia mes="12" numero="14" santo="San Juan de la Cruz"/>
+    <dia mes="12" numero="15" santo="Santa Ninfa"/>
+    <dia mes="12" numero="16" santo="San Adela"/>
+    <dia mes="12" numero="17" santo="San Lázaro"/>
+    <dia mes="12" numero="18" santo="San Dámaso"/>
+    <dia mes="12" numero="19" santo="San Urbano I"/>
+    <dia mes="12" numero="20" santo="San Dámaso"/>
+    <dia mes="12" numero="21" santo="San Pedro Canisio"/>
+    <dia mes="12" numero="22" santo="San Florián"/>
+    <dia mes="12" numero="23" santo="San Juan de Kety"/>
+    <dia mes="12" numero="24" santo="Natividad del Señor"/>
+    <dia mes="12" numero="25" santo="Navidad: Jesucristo"/>
+    <dia mes="12" numero="26" santo="San Esteban"/>
+    <dia mes="12" numero="27" santo="San Juan Evangelista"/>
+    <dia mes="12" numero="28" santo="Inocentes, mártires"/>
+    <dia mes="12" numero="29" santo="San Tomás Becket"/>
+    <dia mes="12" numero="30" santo="Santos Fabián y Sebastián"/>
+    <dia mes="12" numero="31" santo="San Silvestre I"/>
+
+</calendario_santos>
