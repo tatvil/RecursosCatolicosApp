@@ -6,19 +6,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="false"
+    app:cardMaxElevation="0dp"
     app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/dark_charcoal">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/header_card_clickable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:background="@color/cardview_light_background"
+            android:background="@color/dark_charcoal"
             android:clickable="true"
             android:focusable="true">
 
@@ -28,20 +31,21 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/primary_blue"
+                android:textColor="@color/soft_gold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/card_icono_expandir"
                 android:layout_marginEnd="8dp"
-                tools:text="1. Al despertar (aprox. 7:30–8:00)"/>
+                tools:text="7:30 - Rutina"/>
 
             <ImageView
                 android:id="@+id/card_icono_expandir"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_flecha_abajo"
-                android:contentDescription="Expandir/Colapsar sección"
+                android:contentDescription="@string/app_name"
+                app:tint="@color/soft_gold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
@@ -58,20 +62,31 @@
             android:paddingBottom="16dp"
             android:visibility="gone">
             <TextView
+                android:id="@+id/card_titulo_contenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textColor="@color/soft_gold"
+                android:background="@color/dark_charcoal"
+                tools:text="Ángelus"/>
+
+            <TextView
                 android:id="@+id/card_contenido_detallado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:textColor="@color/black"
-                android:background="@color/cardview_light_background"
-                tools:text="Contenido detallado: Ángelus, Evangelio del día y Bendición del desayuno. [Texto completo aquí]"/>
+                android:textColor="@color/prayer_cream"
+                android:background="@color/dark_charcoal"
+                tools:text="Ángelus, Evangelio del día y Bendición del desayuno. [Texto completo aquí]"/>
 
             <Button
                 android:id="@+id/btn_ir_a_rosario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ir al Rosario Completo"
+                android:text="@string/rosario"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="@color/soft_gold"
+                android:textColor="@color/deep_night"
                 android:visibility="gone"/>
         </LinearLayout>
     </LinearLayout>

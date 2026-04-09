@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/deep_night"
     tools:context=".RosarioActivity">
 
     <TextView
         android:id="@+id/text_misterios"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/primary_blue"
+        android:background="@color/dark_charcoal"
         android:padding="16dp"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textColor="@color/soft_gold"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="center"
         android:text="@string/misterios_gozosos"
@@ -22,69 +22,82 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/image_misterio"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_misterio"
         android:layout_width="0dp"
-        android:layout_height="320dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/gozosos1"
+        android:layout_height="280dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_misterios"  /> <TextView
-        android:id="@+id/text_nombre_misterio"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#80000000"
-        android:padding="16dp"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:text="@string/_1_misterio_la_anunciacion"
-        app:layout_constraintBottom_toBottomOf="@+id/image_misterio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/text_misterios">
 
-    <TextView
-        android:id="@+id/text_oracion_actual"
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_misterio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gozosos1"
+                android:contentDescription="@string/_1_misterio_la_anunciacion" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_overlay" />
+
+            <TextView
+                android:id="@+id/text_nombre_misterio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/_1_misterio_la_anunciacion" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scroll_oracion"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:text="@string/ave_maria"
-        android:textColor="@android:color/black"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_audio_controls"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_misterio" />
+        app:layout_constraintTop_toBottomOf="@+id/card_misterio">
 
+        <TextView
+            android:id="@+id/text_oracion_actual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/ave_maria"
+            android:textColor="@color/prayer_cream"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="4dp" />
+    </ScrollView>
 
     <LinearLayout
-        android:id="@+id/layout_progreso_rosario"
-        android:layout_width="match_parent"
+        android:id="@+id/layout_cuentas_avemaria"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:textAlignment="center"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_audio_controls"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_oracion_actual">
-
-
-        <LinearLayout
-            android:id="@+id/layout_cuentas_avemaria"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="end">
-        </LinearLayout>
-
-    </LinearLayout>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/layout_audio_controls"
@@ -103,6 +116,7 @@
             android:layout_height="48dp"
             android:src="@android:drawable/ic_media_rew"
             android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/soft_gold"
             android:contentDescription="@string/rebobinar" />
 
         <ImageButton
@@ -111,6 +125,7 @@
             android:layout_height="64dp"
             android:src="@android:drawable/ic_media_play"
             android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/soft_gold"
             android:contentDescription="Reproducir/Pausar" />
 
         <ImageButton
@@ -119,6 +134,7 @@
             android:layout_height="48dp"
             android:src="@android:drawable/ic_media_ff"
             android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/soft_gold"
             android:contentDescription="@string/avanzar" />
     </LinearLayout>
 
@@ -126,13 +142,13 @@
         android:id="@+id/button_siguiente_oracion"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:text="@string/siguiente_oracion"
         android:textSize="18sp"
-        android:backgroundTint="@color/primary_blue"
-        android:textColor="@android:color/white"
+        android:backgroundTint="@color/soft_gold"
+        android:textColor="@color/deep_night"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -37,6 +37,15 @@ public class RosarioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rosario);
 
+        // 2. Initialize Managers (MOVED TO THE TOP)
+        RosarioDataProvider dataProvider = new RosarioDataProvider(this);
+        // VVV FIX: INITIALIZE THE OBJECT VVV
+        rosarioLogicManager = new RosarioLogicManager(dataProvider);
+        rosarioAudioManager = new RosarioAudioManager(this);
+
+        // NOW IT'S SAFE TO USE THE MANAGER
+        rosarioLogicManager.resetRosario(); // This line is now safe, and this was line 39 in the original code.
+
         // 1. Initialize UI elements
         imageMisterio = findViewById(R.id.image_misterio);
         textNombreMisterio = findViewById(R.id.text_nombre_misterio);
@@ -47,7 +56,7 @@ public class RosarioActivity extends AppCompatActivity {
         textMisteriosTitulo = findViewById(R.id.text_misterios); // Assuming you have this TextView
 
         // 2. Initialize Managers
-        RosarioDataProvider dataProvider = new RosarioDataProvider(this);
+//        RosarioDataProvider dataProvider = new RosarioDataProvider(this);
         rosarioLogicManager = new RosarioLogicManager(dataProvider);
         rosarioAudioManager = new RosarioAudioManager(this);
 

@@ -37,21 +37,20 @@ public class OracionRutinaAdapter extends RecyclerView.Adapter<OracionRutinaAdap
         OracionDia oracion = listaOraciones.get(position);
 
         holder.tituloTextView.setText(oracion.getHora() + ": " + oracion.getTitulo());
+        holder.tituloContenido.setText(oracion.getTitulo());
         holder.contenidoTextView.setText(oracion.getDescripcionDetallada());
 
         // **LÓGICA DE EXPANSIÓN/COLAPSO**
         boolean isExpanded = oracion.isExpandido();
         holder.contenidoLayout.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
 
-        // **IMPORTANTE: Usa tus nombres de drawable corregidos (ej. ic_expand_up/down)**
-        // Yo usaré los nombres corregidos que te sugerí en la respuesta anterior:
         holder.expandIcon.setImageResource(isExpanded ? R.drawable.ic_flecha_arriba : R.drawable.ic_flecha_abajo);
 
         // Lógica para mostrar/ocultar el botón "Ir al Rosario Completo"
         if (oracion.getTitulo().contains("Rosario")) {
             holder.rosarioButton.setVisibility(View.VISIBLE);
             holder.rosarioButton.setOnClickListener(v -> {
-                // Aquí puedes iniciar la actividad del Rosario
+                // Iniciar la actividad del Rosario
                 holder.rosarioButton.getContext().startActivity(new Intent(holder.rosarioButton.getContext(), RosarioActivity.class));
             });
         } else {
@@ -71,18 +70,19 @@ public class OracionRutinaAdapter extends RecyclerView.Adapter<OracionRutinaAdap
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        // ... (Tu código de ViewHolder se mantiene igual, ya que está correcto) ...
         TextView tituloTextView;
         TextView contenidoTextView;
         LinearLayout contenidoLayout;
         ConstraintLayout headerClickable;
         ImageView expandIcon;
         Button rosarioButton;
+        TextView tituloContenido;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             headerClickable = itemView.findViewById(R.id.header_card_clickable);
             tituloTextView = itemView.findViewById(R.id.card_titulo_seccion);
+            tituloContenido = itemView.findViewById(R.id.card_titulo_contenido);
             contenidoLayout = itemView.findViewById(R.id.card_contenido_expandible);
             contenidoTextView = itemView.findViewById(R.id.card_contenido_detallado);
             expandIcon = itemView.findViewById(R.id.card_icono_expandir);

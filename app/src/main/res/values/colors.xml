@@ -3,21 +3,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Colores Primarios -->
-    <color name="primary_red">#880000</color>
-    <color name="primary_dark_red">#440000</color>
-    <color name="primary_white">#FFFFFF</color>
-    <color name="primary_smoke_white">#F5F5F5</color>
-    <color name="primary_blue">#0054a4</color>
-    <color name="primary_dark_blue">#1a3668</color>
+    <!-- Hallow-inspired Intimate Dark Palette -->
+    <color name="deep_night">#121212</color>
+    <color name="dark_charcoal">#1F1F1F</color>
+    <color name="soft_gold">#D4AF37</color>
+    <color name="muted_gold">#A8892D</color>
+    <color name="prayer_cream">#F5F5DC</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="accent_purple">#2D1B33</color>
+    <color name="dark_blue_night">#1A237E</color>
 
-    <!-- Colores Secundarios -->
-    <color name="secondary_coral_red">#FF7F50</color>
-    <color name="secondary_light_red">#FFA07A</color>
-    <color name="secondary_light_gray">#D3D3D3</color>
-    <color name="secondary_silver_gray">#C0C0C0</color>
-    <color name="secondary_sky_blue">#a4d7f4</color>
-    <color name="secondary_steel_blue">#4682B4</color>
-
-    <color name="cardview_light_background">#f5f5ff</color>
+    <!-- Compatibility -->
+    <color name="background_soft">#121212</color>
+    <color name="marian_blue">#1A237E</color>
+    <color name="marian_blue_light">#3F51B5</color>
+    <color name="celestial_gold">#D4AF37</color>
 </resources>

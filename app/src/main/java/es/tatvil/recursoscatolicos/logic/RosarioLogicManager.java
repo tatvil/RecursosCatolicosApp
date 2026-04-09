@@ -1,5 +1,7 @@
 package es.tatvil.recursoscatolicos.logic;
 
+import android.util.Log;
+
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.List;
@@ -29,6 +31,7 @@ public class RosarioLogicManager {
         this.dataProvider = dataProvider;
         // Obtenemos los misterios del día al inicializar la clase.
         this.misteriosDelDia = dataProvider.getMisteriosDelDia();
+        Log.d("RosarioLogicManager","Misterio del dia: " + this.misteriosDelDia);
     }
 
     /**
@@ -36,6 +39,7 @@ public class RosarioLogicManager {
      */
     public void resetRosario() {
         etapaRosario = 0;
+        Log.d("RosarioLogicManager","Rest Rosario - EtapaRosario: " + etapaRosario);
         oracionEnEtapaIndex = 0;
         // Volvemos a obtener los misterios del día por si el día ha cambiado.
         this.misteriosDelDia = dataProvider.getMisteriosDelDia();
@@ -46,49 +50,48 @@ public class RosarioLogicManager {
      *
      * @return El objeto Oracion actual, o null si el rosario ha terminado.
      */
+    // Inside RosarioLogicManager.java
+
     public Oracion getNextOracion() {
-        // Incrementamos primero para ir a la siguiente oración.
-        // La lógica de avance de etapa se maneja al final del método.
-        oracionEnEtapaIndex++;
-
-        // La llamada a getCurrentOracion() está ahora aquí, ya que el índice
-        // se actualizó para apuntar a la siguiente oración.
-        Oracion currentOracion = getCurrentOracion();
-
-        // Si la oración actual es null, el rosario ha terminado.
-        if (currentOracion == null) {
-            return null;
-        }
-
-        // Se ha simplificado la lógica de avance de etapa para mayor claridad.
-        // Si el índice de la oración en la etapa ha excedido el tamaño de la lista de oraciones,
-        // avanzamos a la siguiente etapa y reiniciamos el índice de la oración.
-        List<Oracion> currentStageOraciones;
-        int totalOracionesInStage;
-
-        if (etapaRosario == 0) { // Introducción
-            currentStageOraciones = dataProvider.getIntroOraciones();
-        } else if (etapaRosario >= 1 && etapaRosario <= 5) { // Décadas
-            currentStageOraciones = dataProvider.getDecadaTemplateOraciones();
-            // La meditación se maneja dentro de la plantilla de la década
-            // al combinarla con el misterio y la plantilla de la década.
-        } else if (etapaRosario == 6) { // Conclusión
-            currentStageOraciones = dataProvider.getConclusionOraciones();
-        } else {
-            return currentOracion; // Si ya hemos completado el rosario, no avanzamos más.
-        }
-
-        totalOracionesInStage = currentStageOraciones.size();
-
-        if (oracionEnEtapaIndex >= totalOracionesInStage) {
+        // 1. Check if the current prayer index is the last one in the current stage.
+        // If it is, advance the stage.
+        Log.d("RosarioLogicManager","getNextOracion - EtapaRosario: " + etapaRosario);
+        if (isCurrentStageComplete()) {
             etapaRosario++;
-            oracionEnEtapaIndex = 0; // Reiniciamos el índice para la próxima etapa
+            oracionEnEtapaIndex = 0; // Start the new stage at index 0
+        } else {
+            // 2. If the current stage is NOT complete, just advance the index.
+            oracionEnEtapaIndex++;
         }
 
-        return currentOracion;
+        // 3. Get the prayer corresponding to the new (or incremented) state.
+        // This is now the ONLY way to get the prayer.
+        Oracion nextOracion = getCurrentOracion();
+
+        // 4. If the new state (e.g., etapa > 6) results in null, the rosary is truly over.
+        return nextOracion;
     }
 
+    // *** NEW HELPER METHOD ***
+    private boolean isCurrentStageComplete() {
+        int totalOracionesInStage = -1; // -1 to be safe
+        Log.d("RosarioLogicManager","isCurrentStageCompleted - EtapaRosario: " + etapaRosario);
+        if (etapaRosario == 0) { // Introducción
+            totalOracionesInStage = dataProvider.getIntroOraciones().size();
+        } else if (etapaRosario >= 1 && etapaRosario <= 5) { // Décadas (Mystery)
+            // DecadaTemplate + 1 (for the Meditation at index 0)
+            totalOracionesInStage = dataProvider.getDecadaTemplateOraciones().size() + 1;
+        } else if (etapaRosario == 6) { // Conclusión
+            totalOracionesInStage = dataProvider.getConclusionOraciones().size();
+        } else {
+            // Already completed
+            return true;
+        }
 
+        // The stage is complete if we have just finished the last prayer (at index = totalOracionesInStage - 1).
+        // The index for the *next* operation should be totalOracionesInStage.
+        return oracionEnEtapaIndex >= totalOracionesInStage;
+    }
     /**
      * Devuelve la oración actual basada en el estado actual (etapa y índice).
      * Este método es nuevo y centraliza la lógica de obtener la oración.
@@ -101,11 +104,12 @@ public class RosarioLogicManager {
             if (oracionEnEtapaIndex < introOraciones.size()) {
                 return introOraciones.get(oracionEnEtapaIndex);
             }
+            Log.d("RosarioLogicManager","EtapaRosario: " + etapaRosario);
         } else if (etapaRosario >= 1 && etapaRosario <= 5) { // Décadas
             // La meditación ya no se trata como una etapa separada.
             // La lógica ahora toma la meditación del misterio actual
             // y la combina con la plantilla de la década.
-            Misterio misterioActual = misteriosDelDia.get(etapaRosario - 1);
+            Misterio misterioActual = misteriosDelDia.get(etapaRosario);
             List<Oracion> decadaTemplate = dataProvider.getDecadaTemplateOraciones();
 
             // Meditación es la primera "oración" de la década (índice 0)

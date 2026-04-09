@@ -4,7 +4,9 @@ Aplicación Android para acceder a recursos católicos diarios, incluyendo:
 
 - **Santo del día**
 - **Lecturas de la Biblia**
-- **Rosario y devociones**
+- **Rosario**
+- **Evangelio del día**
+- **Oraciones diarias**
 
 ---
 
@@ -13,4 +15,7 @@ Aplicación Android para acceder a recursos católicos diarios, incluyendo:
 - Mostrar el **santo del día** automáticamente según la fecha.
 - Acceso rápido a **lecturas bíblicas**.
 - Guía para rezar el **Rosario**.
-- Interfaz simple y moderna basada en **Material Design**.
+
+En el futuro, se planea agregar:
+- Novenas
+

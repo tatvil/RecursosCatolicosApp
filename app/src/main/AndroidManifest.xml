@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Recursoscatolicos">
         <activity
+            android:name=".DiarioActivity"
+            android:exported="false" />
+        <activity
             android:name=".RosarioActivity"
             android:exported="false" />
         <activity

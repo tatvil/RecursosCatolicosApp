@@ -2,13 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Recursoscatolicos" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/primary_blue</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/primary_blue</item>
-        <item name="colorOnSecondary">@color/white</item>
-        <item name="colorSurface">@color/white</item>
-        <item name="colorOnSurface">@color/black</item>
-        <item name="colorError">@color/primary_red</item>
+        <item name="colorPrimary">@color/soft_gold</item>
+        <item name="colorOnPrimary">@color/deep_night</item>
+        <item name="colorSecondary">@color/dark_charcoal</item>
+        <item name="colorOnSecondary">@color/prayer_cream</item>
+        <item name="android:windowBackground">@color/deep_night</item>
+        <item name="colorSurface">@color/deep_night</item>
+        <item name="colorOnSurface">@color/prayer_cream</item>
+        <item name="colorError">#B00020</item>
         <item name="colorOnError">@color/white</item>
     </style>
 

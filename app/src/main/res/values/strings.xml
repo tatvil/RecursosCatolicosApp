@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Recursos Católicos</string>
-    <string name="siguiente_versiculo">Siguiente versiculo\n</string>
-    <string name="versiculo_de_la_biblia">Versiculo de la biblia\n</string>
-    <string name="angelus">Señal de la cruz: \n\nEl ángel del Señor anunció a María. Y concibió por obra del Espíritu Santo.\n\nHe aquí la sierva del Señor. Hágase en mí según tu palabra.</string>
+    <string name="app_name">Recursos católicos</string>
+    <string name="siguiente_versiculo">Siguiente versiculo</string>
+    <string name="versiculo_de_la_biblia">Versiculo de la biblia</string>
+    <string name="angelus">El ángel del Señor anunció a María. Y concibió por obra del Espíritu Santo.\n\nHe aquí la sierva del Señor. Hágase en mí según tu palabra.</string>
     <string name="bendicion_alimentos">Bendice, Señor, estos alimentos y danos salud y fuerza para servirte. Amén.</string>
     <string name="rosario">Rosario</string>
     <string name="gloria">Gloria al Padre, al hijo y al espiritu santo \n Como era en un principio, ahora y siembre, por los siglos de los siglos. \n Amen</string>
@@ -12,7 +12,7 @@
     <string name="siguiente_oracion">Siguiente Oracion</string>
     <string name="avanzar">Avanzar</string>
     <string name="rebobinar">Rebobinar</string>
-    <string name="ave_maria">Dios te salve María\\n\nllena eres de gracia\\n\nEl Señor es contigo\\n\nBendita tu eres entre todas las mujeres\\n\ny bendito es el fruto de tu vientre Jesús \\n\\n\nSanta Maria, Madre de Dios\\n\nRuega por nosotros pecadores\\n\nAhora y en la hora de nuestra muerte\\n\\n\nAMEN</string>
+    <string name="ave_maria">Dios te salve María\n llena eres de gracia \n El Señor es contigo\\n\nBendita tu eres entre todas las mujeres\\n\ny bendito es el fruto de tu vientre Jesús \\n\\n\nSanta Maria, Madre de Dios\\n\nRuega por nosotros pecadores\\n\nAhora y en la hora de nuestra muerte\\n\\n\nAMEN</string>
     <string name="misterios_gozosos">Misterios Gozosos</string>
     <string name="_1_misterio_la_anunciacion">1º Misterio: La Anunciación</string>
 
@@ -93,5 +93,18 @@
     <string name="luminoso_3_meditacion">Marcos 1,14-15: Jesús proclamó el Reino de Dios: «Convertíos y creed en el Evangelio.» Invitó a la penitencia y al seguimiento de su Palabra.</string>
     <string name="luminoso_4_meditacion">Lucas 9,28-36: Jesús se transfiguró en el monte, revelando su gloria a Pedro, Santiago y Juan. Moisés y Elías aparecieron, y el Padre dijo: «Este es mi Hijo, el Elegido; escuchadle.»</string>
     <string name="luminoso_5_meditacion">Lucas 22,19-20: Jesús instituyó la Eucaristía en la Última Cena, dando su Cuerpo y Sangre como alimento y memorial de su sacrificio por nosotros.</string>
+    <string name="biblia">BIBLIA</string>
+    <string name="santa_biblia">Santa Biblia</string>
+    <string name="seleccionar_libro">Seleccionar Libro</string>
+    <string name="seleccionar_capitulo">Capítulo</string>
 
+    <string name="paz_contigo">Paz contigo</string>
+    <string name="frase_alma">Frase para tu alma</string>
+    <string name="evangelio_hoy">Evangelio de hoy</string>
+    <string name="diario_oracion">Diario de Oración</string>
+    <string name="diario_subtitulo">Escribe tu reflexión para el Señor</string>
+    <string name="icono_diario">Icono de diario</string>
+    <string name="frase_teresa">\"Nada te turbe, nada te espante, todo se pasa, Dios no se muda.\"</string>
+    <string name="autor_teresa">— Santa Teresa de Jesús</string>
+    <string name="expandir_colapsar_seccion">Expandir/Colapsar sección</string>
 </resources>

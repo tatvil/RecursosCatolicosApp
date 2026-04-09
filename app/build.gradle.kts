@@ -7,7 +7,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "es.tatvil.recursoscatolicos"
+        applicationId = "es.tatvil.recursoscatolicos.dev"
         minSdk = 28
         targetSdk = 36
         versionCode = 1

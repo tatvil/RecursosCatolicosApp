@@ -2,7 +2,7 @@
 <rutinas>
     <momento
         id="1"
-        titulo="Buenos días"
+        titulo="Angelus"
         hora="7:00"
         contenido_ref="@string/angelus" />
 
@@ -20,7 +20,7 @@
 
     <momento
         id="4"
-        titulo="Mediodia"
+        titulo="Angelus"
         hora="12:00"
         contenido_ref="@string/angelus" />
 
@@ -44,7 +44,7 @@
 
     <momento
         id="8"
-        titulo="ORaciones de la noche"
+        titulo="Oraciones de la noche"
         hora="2300"
         contenido_ref="@string/noche_contenido" />
 
