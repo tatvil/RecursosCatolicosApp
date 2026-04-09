@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<salmos>
+    <salmo>
+        <numero>1</numero>
+        <texto>Bienaventurado el hombre que no sigue el consejo de los malvados... es como árbol plantado junto a corrientes de agua.</texto>
+    </salmo>
+    <salmo>
+        <numero>2</numero>
+        <texto>Tú eres mi hijo; yo te he engendrado hoy. Pídeme, y te daré en herencia las naciones.</texto>
+    </salmo>
+    <salmo>
+        <numero>3</numero>
+        <texto>Tú, Señor, eres mi escudo, mi gloria, el que levanta mi cabeza.</texto>
+    </salmo>
+    <salmo>
+        <numero>4</numero>
+        <texto>En paz me acostaré y asimismo dormiré, porque solo tú, Señor, me haces vivir confiado.</texto>
+    </salmo>
+    <salmo>
+        <numero>5</numero>
+        <texto>Escucha, oh Señor, mis palabras; considera mi gemir. Atiende a la voz de mi clamor.</texto>
+    </salmo>
+    <salmo>
+        <numero>6</numero>
+        <texto>Señor, no me reprendas en tu furor, ni me castigues con tu ira. Ten misericordia de mí.</texto>
+    </salmo>
+    <salmo>
+        <numero>7</numero>
+        <texto>Mi escudo está en Dios, que salva a los rectos de corazón.</texto>
+    </salmo>
+    <salmo>
+        <numero>8</numero>
+        <texto>¡Oh Señor, Señor nuestro, cuán glorioso es tu nombre en toda la tierra!</texto>
+    </salmo>
+    <salmo>
+        <numero>9</numero>
+        <texto>Te alabaré, Señor, con todo mi corazón; contaré todas tus maravillas.</texto>
+    </salmo>
+    <salmo>
+        <numero>10</numero>
+        <texto>Tú ves la pena y el dolor para recogerlos en tus manos; a ti se acoge el desamparado.</texto>
+    </salmo>
+    <salmo>
+        <numero>11</numero>
+        <texto>En el Señor me refugio. ¿Cómo decís a mi alma: Escapa cual ave al monte?</texto>
+    </salmo>
+    <salmo>
+        <numero>12</numero>
+        <texto>Las palabras del Señor son palabras limpias, plata refinada en horno de tierra.</texto>
+    </salmo>
+    <salmo>
+        <numero>13</numero>
+        <texto>¿Hasta cuándo, Señor? ¿Me olvidarás para siempre? Yo en tu misericordia he confiado.</texto>
+    </salmo>
+    <salmo>
+        <numero>14</numero>
+        <texto>Dice el necio en su corazón: No hay Dios. El Señor mira desde los cielos sobre los hijos de los hombres.</texto>
+    </salmo>
+    <salmo>
+        <numero>15</numero>
+        <texto>Señor, ¿quién habitará en tu tabernáculo? El que anda en integridad y hace justicia.</texto>
+    </salmo>
+    <salmo>
+        <numero>16</numero>
+        <texto>Protégeme, Dios mío, porque en ti me refugio. Tú eres mi bien, nada hay fuera de ti.</texto>
+    </salmo>
+    <salmo>
+        <numero>17</numero>
+        <texto>Guárdame como a la niña de tus ojos; escóndeme bajo la sombra de tus alas.</texto>
+    </salmo>
+    <salmo>
+        <numero>18</numero>
+        <texto>Te amo, Señor, fortaleza mía. El Señor es mi roca, mi fortaleza y mi libertador.</texto>
+    </salmo>
+    <salmo>
+        <numero>19</numero>
+        <texto>Los cielos cuentan la gloria de Dios, y el firmamento anuncia la obra de sus manos.</texto>
+    </salmo>
+    <salmo>
+        <numero>20</numero>
+        <texto>Que el Señor te responda en el día de la angustia; que el nombre del Dios de Jacob te defienda.</texto>
+    </salmo>
+    <salmo>
+        <numero>21</numero>
+        <texto>El rey se alegra en tu poder, Señor; y en tu salvación, ¡cuánto se regocija!</texto>
+    </salmo>
+    <salmo>
+        <numero>22</numero>
+        <texto>Dios mío, Dios mío, ¿por qué me has abandonado? Pero tú eres santo, tú que habitas entre las alabanzas.</texto>
+    </salmo>
+    <salmo>
+        <numero>23</numero>
+        <texto>El Señor es mi pastor, nada me falta. En verdes pastos me hace descansar.</texto>
+    </salmo>
+    <salmo>
+        <numero>24</numero>
+        <texto>Del Señor es la tierra y su plenitud; el mundo, y los que en él habitan.</texto>
+    </salmo>
+    <salmo>
+        <numero>25</numero>
+        <texto>A ti, Señor, levanto mi alma. Dios mío, en ti confío; no sea yo avergonzado.</texto>
+    </salmo>
+    <salmo>
+        <numero>26</numero>
+        <texto>Júzgame, oh Señor, porque yo en mi integridad he andado; he confiado en el Señor sin titubear.</texto>
+    </salmo>
+    <salmo>
+        <numero>27</numero>
+        <texto>El Señor es mi luz y mi salvación; ¿a quién temeré? El Señor es la fortaleza de mi vida.</texto>
+    </salmo>
+    <salmo>
+        <numero>28</numero>
+        <texto>A ti clamaré, oh Señor, roca mía; no te desentiendas de mí.</texto>
+    </salmo>
+    <salmo>
+        <numero>29</numero>
+        <texto>Tributad al Señor, oh hijos de los poderosos, dad al Señor la gloria y el poder.</texto>
+    </salmo>
+    <salmo>
+        <numero>30</numero>
+        <texto>Te exaltaré, Señor, porque me has levantado. Señor Dios mío, a ti clamé, y me sanaste.</texto>
+    </salmo>
+    <salmo>
+        <numero>31</numero>
+        <texto>En ti, Señor, me he refugiado; no sea yo avergonzado jamás. En tu mano encomiendo mi espíritu.</texto>
+    </salmo>
+    <salmo>
+        <numero>32</numero>
+        <texto>Bienaventurado aquel cuya transgresión ha sido perdonada, y cubierto su pecado.</texto>
+    </salmo>
+    <salmo>
+        <numero>33</numero>
+        <texto>Alegraos, oh justos, en el Señor; en los íntegros es hermosa la alabanza.</texto>
+    </salmo>
+    <salmo>
+        <numero>34</numero>
+        <texto>Bendeciré al Señor en todo tiempo; su alabanza estará siempre en mi boca.</texto>
+    </salmo>
+    <salmo>
+        <numero>35</numero>
+        <texto>Disputa, oh Señor, con los que contra mí disputan; pelea contra los que me combaten.</texto>
+    </salmo>
+    <salmo>
+        <numero>36</numero>
+        <texto>Señor, hasta los cielos llega tu misericordia, y tu fidelidad alcanza a las nubes.</texto>
+    </salmo>
+    <salmo>
+        <numero>37</numero>
+        <texto>Confía en el Señor, y haz el bien; deléitate asimismo en el Señor, y él te concederá las peticiones de tu corazón.</texto>
+    </salmo>
+    <salmo>
+        <numero>38</numero>
+        <texto>Señor, no me reprendas en tu furor. Mi corazón late apresuradamente, me faltan las fuerzas.</texto>
+    </salmo>
+    <salmo>
+        <numero>39</numero>
+        <texto>Yo dije: Atenderé a mis caminos, para no pecar con mi lengua. Hazme saber, Señor, mi fin.</texto>
+    </salmo>
+    <salmo>
+        <numero>40</numero>
+        <texto>Pacientemente esperé al Señor, y él se inclinó a mí, y oyó mi clamor.</texto>
+    </salmo>
+    <salmo>
+        <numero>41</numero>
+        <texto>Bienaventurado el que piensa en el pobre; en el día malo lo librará el Señor.</texto>
+    </salmo>
+    <salmo>
+        <numero>42</numero>
+        <texto>Como el ciervo brama por las corrientes de las aguas, así clama por ti, oh Dios, el alma mía.</texto>
+    </salmo>
+    <salmo>
+        <numero>43</numero>
+        <texto>Júzgame, oh Dios, y defiende mi causa; envíame tu luz y tu verdad, que ellas me guíen.</texto>
+    </salmo>
+    <salmo>
+        <numero>44</numero>
+        <texto>Con nuestros oídos hemos oído, oh Dios, nuestros padres nos han contado la obra que hiciste en sus días.</texto>
+    </salmo>
+    <salmo>
+        <numero>45</numero>
+        <texto>Rebosa mi corazón palabra buena; mi lengua es pluma de escribiente muy ligero.</texto>
+    </salmo>
+    <salmo>
+        <numero>46</numero>
+        <texto>Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones.</texto>
+    </salmo>
+    <salmo>
+        <numero>47</numero>
+        <texto>Pueblos todos, batid las manos; aclamad a Dios con voz de júbilo.</texto>
+    </salmo>
+    <salmo>
+        <numero>48</numero>
+        <texto>Grande es el Señor, y digno de ser en gran manera alabado en la ciudad de nuestro Dios.</texto>
+    </salmo>
+    <salmo>
+        <numero>49</numero>
+        <texto>Oíd esto, pueblos todos; escuchad, habitantes todos del mundo. El hombre no permanecerá en su honra.</texto>
+    </salmo>
+    <salmo>
+        <numero>50</numero>
+        <texto>El Dios de dioses, el Señor, ha hablado; del nacimiento del sol hasta donde se pone.</texto>
+    </salmo>
+    <salmo>
+        <numero>51</numero>
+        <texto>Ten piedad de mí, oh Dios, conforme a tu misericordia. Crea en mí un corazón puro.</texto>
+    </salmo>
+    <salmo>
+        <numero>52</numero>
+        <texto>Yo estoy como olivo verde en la casa de Dios; en la misericordia de Dios confío eternamente.</texto>
+    </salmo>
+    <salmo>
+        <numero>53</numero>
+        <texto>Dijo el necio en su corazón: No hay Dios. Dios desde los cielos miró sobre los hijos de los hombres.</texto>
+    </salmo>
+    <salmo>
+        <numero>54</numero>
+        <texto>Oh Dios, sálvame por tu nombre, y con tu poder defiéndeme. Dios es el que me ayuda.</texto>
+    </salmo>
+    <salmo>
+        <numero>55</numero>
+        <texto>Escucha, oh Dios, mi oración. ¡Quién me diese alas como de paloma! Volaría yo, y descansaría.</texto>
+    </salmo>
+    <salmo>
+        <numero>56</numero>
+        <texto>En Dios alabaré su palabra; en Dios he confiado; no temeré lo que pueda hacerme el hombre.</texto>
+    </salmo>
+    <salmo>
+        <numero>57</numero>
+        <texto>Ten misericordia de mí, oh Dios; porque en ti ha confiado mi alma. Bajo la sombra de tus alas me refugiaré.</texto>
+    </salmo>
+    <salmo>
+        <numero>58</numero>
+        <texto>Ciertamente hay un Dios que juzga en la tierra. ¿Habláis rectamente, oh poderosos?</texto>
+    </salmo>
+    <salmo>
+        <numero>59</numero>
+        <texto>Líbrame de mis enemigos, Dios mío; ponme a salvo de los que contra mí se levantan.</texto>
+    </salmo>
+    <salmo>
+        <numero>60</numero>
+        <texto>Oh Dios, tú nos has desechado, nos quebrantaste. Danos socorro contra el enemigo.</texto>
+    </salmo>
+    <salmo>
+        <numero>61</numero>
+        <texto>Oye, oh Dios, mi clamor; a mi oración atiende. Desde el cabo de la tierra clamaré a ti.</texto>
+    </salmo>
+    <salmo>
+        <numero>62</numero>
+        <texto>En Dios solamente descansa mi alma; de él viene mi salvación. Él solamente es mi roca.</texto>
+    </salmo>
+    <salmo>
+        <numero>63</numero>
+        <texto>Dios, Dios mío eres tú; de madrugada te buscaré; mi alma tiene sed de ti.</texto>
+    </salmo>
+    <salmo>
+        <numero>64</numero>
+        <texto>Escucha, oh Dios, la voz de mi queja; guarda mi vida del miedo del enemigo.</texto>
+    </salmo>
+    <salmo>
+        <numero>65</numero>
+        <texto>A ti te pertenece la alabanza en Sion, oh Dios. Tú oyes la oración; a ti vendrá toda carne.</texto>
+    </salmo>
+    <salmo>
+        <numero>66</numero>
+        <texto>Aclamad a Dios con alegría, toda la tierra; cantad la gloria de su nombre.</texto>
+    </salmo>
+    <salmo>
+        <numero>67</numero>
+        <texto>Dios tenga misericordia de nosotros, y nos bendiga; haga resplandecer su rostro sobre nosotros.</texto>
+    </salmo>
+    <salmo>
+        <numero>68</numero>
+        <texto>Levántese Dios, sean esparcidos sus enemigos. Cantad a Dios, cantad salmos a su nombre.</texto>
+    </salmo>
+    <salmo>
+        <numero>69</numero>
+        <texto>Sálvame, oh Dios, porque las aguas han entrado hasta el alma. Estoy hundido en cieno profundo.</texto>
+    </salmo>
+    <salmo>
+        <numero>70</numero>
+        <texto>Oh Dios, acude a librarme; apresúrate, oh Señor, a socorrerme.</texto>
+    </salmo>
+    <salmo>
+        <numero>71</numero>
+        <texto>En ti, oh Señor, me he refugiado; no sea yo avergonzado jamás. Sé para mí una roca de refugio.</texto>
+    </salmo>
+    <salmo>
+        <numero>72</numero>
+        <texto>Oh Dios, da tus juicios al rey. Él juzgará a tu pueblo con justicia y a tus pobres con juicio.</texto>
+    </salmo>
+    <salmo>
+        <numero>73</numero>
+        <texto>Ciertamente es bueno Dios a Israel, a los limpios de corazón. Pero yo, por poco resbalaron mis pasos.</texto>
+    </salmo>
+    <salmo>
+        <numero>74</numero>
+        <texto>¿Por qué, oh Dios, nos has desechado para siempre? Acuérdate de tu congregación.</texto>
+    </salmo>
+    <salmo>
+        <numero>75</numero>
+        <texto>Gracias te damos, oh Dios; tu nombre está cercano; los hombres cuentan tus maravillas.</texto>
+    </salmo>
+    <salmo>
+        <numero>76</numero>
+        <texto>Dios es conocido en Judá; en Israel es grande su nombre. Tú, temible eres tú.</texto>
+    </salmo>
+    <salmo>
+        <numero>77</numero>
+        <texto>Con mi voz clamé a Dios, y él me escuchó. Recordaba yo a Dios, y me conmovía.</texto>
+    </salmo>
+    <salmo>
+        <numero>78</numero>
+        <texto>Escucha, pueblo mío, mi ley; inclinad vuestro oído a las palabras de mi boca. Hablaré parábolas.</texto>
+    </salmo>
+    <salmo>
+        <numero>79</numero>
+        <texto>Oh Dios, vinieron las naciones a tu heredad; han profanado tu santo templo.</texto>
+    </salmo>
+    <salmo>
+        <numero>80</numero>
+        <texto>Oh Pastor de Israel, escucha; tú que pastoreas como a ovejas a José. Haznos volver, oh Dios.</texto>
+    </salmo>
+    <salmo>
+        <numero>81</numero>
+        <texto>Cantad con gozo a Dios, fortaleza nuestra; al Dios de Jacob aclamad con júbilo.</texto>
+    </salmo>
+    <salmo>
+        <numero>82</numero>
+        <texto>Dios preside en la reunión de los dioses; en medio de los dioses juzga: ¿Hasta cuándo juzgaréis injustamente?</texto>
+    </salmo>
+    <salmo>
+        <numero>83</numero>
+        <texto>Oh Dios, no guardes silencio; no calles, oh Dios, ni te estés quieto.</texto>
+    </salmo>
+    <salmo>
+        <numero>84</numero>
+        <texto>¡Cuán amables son tus moradas, oh Señor de los ejércitos! Anhela mi alma los atrios del Señor.</texto>
+    </salmo>
+    <salmo>
+        <numero>85</numero>
+        <texto>Fuiste propicio a tu tierra, oh Señor; restauraste la cautividad de Jacob.</texto>
+    </salmo>
+    <salmo>
+        <numero>86</numero>
+        <texto>Inclina, oh Señor, tu oído, y escúchame, porque estoy pobre y necesitado. Guarda mi alma.</texto>
+    </salmo>
+    <salmo>
+        <numero>87</numero>
+        <texto>Su cimiento está en los montes santos. Ama el Señor las puertas de Sion más que todas las moradas de Jacob.</texto>
+    </salmo>
+    <salmo>
+        <numero>88</numero>
+        <texto>Oh Señor, Dios de mi salvación, día y noche clamo delante de ti. Llegue mi oración a tu presencia.</texto>
+    </salmo>
+    <salmo>
+        <numero>89</numero>
+        <texto>Las misericordias del Señor cantaré eternamente; de generación en generación haré notar tu fidelidad.</texto>
+    </salmo>
+    <salmo>
+        <numero>90</numero>
+        <texto>Señor, tú nos has sido refugio de generación en generación. Enséñanos a contar nuestros días.</texto>
+    </salmo>
+    <salmo>
+        <numero>91</numero>
+        <texto>El que habita al abrigo del Altísimo morará bajo la sombra del Omnipotente. Diré yo al Señor: Esperanza mía.</texto>
+    </salmo>
+    <salmo>
+        <numero>92</numero>
+        <texto>Bueno es alabarte, oh Señor, y cantar salmos a tu nombre, oh Altísimo; anunciar por la mañana tu misericordia.</texto>
+    </salmo>
+    <salmo>
+        <numero>93</numero>
+        <texto>El Señor reina; se vistió de magnificencia. Firmó también el mundo, que no se moverá.</texto>
+    </salmo>
+    <salmo>
+        <numero>94</numero>
+        <texto>Dios de las venganzas, Señor, resplandece. ¿Hasta cuándo los impíos se gloriarán?</texto>
+    </salmo>
+    <salmo>
+        <numero>95</numero>
+        <texto>Venid, aclamemos alegremente al Señor; cantemos con júbilo a la roca de nuestra salvación.</texto>
+    </salmo>
+    <salmo>
+        <numero>96</numero>
+        <texto>Cantad al Señor cántico nuevo; cantad al Señor, toda la tierra. Decid entre las naciones: El Señor reina.</texto>
+    </salmo>
+    <salmo>
+        <numero>97</numero>
+        <texto>El Señor reina; regocíjese la tierra. Nubes y oscuridad hay alrededor de él; justicia y juicio son el cimiento de su trono.</texto>
+    </salmo>
+    <salmo>
+        <numero>98</numero>
+        <texto>Cantad al Señor cántico nuevo, porque ha hecho maravillas; su diestra lo ha salvado.</texto>
+    </salmo>
+    <salmo>
+        <numero>99</numero>
+        <texto>El Señor reina; temblarán los pueblos. Exaltad al Señor nuestro Dios, y postraos ante el estrado de sus pies.</texto>
+    </salmo>
+    <salmo>
+        <numero>100</numero>
+        <texto>Cantad alegres a Dios, toda la tierra. Servid al Señor con alegría; venid ante su presencia con regocijo.</texto>
+    </salmo>
+    <salmo>
+        <numero>101</numero>
+        <texto>Misericordia y juicio cantaré; a ti cantaré yo, Señor. Entenderé el camino de la perfección.</texto>
+    </salmo>
+    <salmo>
+        <numero>102</numero>
+        <texto>Señor, escucha mi oración, y llegue mi clamor a ti. No escondas de mí tu rostro en el día de mi angustia.</texto>
+    </salmo>
+    <salmo>
+        <numero>103</numero>
+        <texto>Bendice, alma mía, al Señor, y bendiga todo mi ser su santo nombre. Él es quien perdona todas tus iniquidades.</texto>
+    </salmo>
+    <salmo>
+        <numero>104</numero>
+        <texto>Bendice, alma mía, al Señor. Señor Dios mío, mucho te has engrandecido; te has vestido de gloria y de magnificencia.</texto>
+    </salmo>
+    <salmo>
+        <numero>105</numero>
+        <texto>Alabad al Señor, invocad su nombre; haced sabidas sus obras en los pueblos. Acordaos de las maravillas que él ha hecho.</texto>
+    </salmo>
+    <salmo>
+        <numero>106</numero>
+        <texto>Aleluya. Alabad al Señor, porque él es bueno; porque para siempre es su misericordia.</texto>
+    </salmo>
+    <salmo>
+        <numero>107</numero>
+        <texto>Alabad al Señor, porque él es bueno. Digan lo los redimidos del Señor, los que ha rescatado del poder del enemigo.</texto>
+    </salmo>
+    <salmo>
+        <numero>108</numero>
+        <texto>Mi corazón está dispuesto, oh Dios; cantaré y entonaré salmos. Despierta, salterio y arpa.</texto>
+    </salmo>
+    <salmo>
+        <numero>109</numero>
+        <texto>Oh Dios de mi alabanza, no calles. Porque boca de impío y boca de engañador se han abierto contra mí.</texto>
+    </salmo>
+    <salmo>
+        <numero>110</numero>
+        <texto>Dijo el Señor a mi Señor: Siéntate a mi diestra, hasta que ponga a tus enemigos por estrado de tus pies.</texto>
+    </salmo>
+    <salmo>
+        <numero>111</numero>
+        <texto>Alabaré al Señor con todo mi corazón. Las obras del Señor son grandes, buscadas por todos los que las quieren.</texto>
+    </salmo>
+    <salmo>
+        <numero>112</numero>
+        <texto>Bienaventurado el hombre que teme al Señor, y en sus mandamientos se deleita en gran manera.</texto>
+    </salmo>
+    <salmo>
+        <numero>113</numero>
+        <texto>Alabad, siervos del Señor, alabad el nombre del Señor. Sea el nombre del Señor bendito desde ahora y para siempre.</texto>
+    </salmo>
+    <salmo>
+        <numero>114</numero>
+        <texto>Cuando salió Israel de Egipto, la casa de Jacob de un pueblo de lengua extraña, el mar lo vio, y huyó.</texto>
+    </salmo>
+    <salmo>
+        <numero>115</numero>
+        <texto>No a nosotros, oh Señor, no a nosotros, sino a tu nombre da gloria, por tu misericordia, por tu verdad.</texto>
+    </salmo>
+    <salmo>
+        <numero>116</numero>
+        <texto>Amo al Señor, pues ha oído mi voz y mis súplicas. ¿Qué pagaré al Señor por todos sus beneficios?</texto>
+    </salmo>
+    <salmo>
+        <numero>117</numero>
+        <texto>Alabad al Señor, naciones todas; pueblos todos, alabadle. Porque ha engrandecido sobre nosotros su misericordia.</texto>
+    </salmo>
+    <salmo>
+        <numero>118</numero>
+        <texto>Alabad al Señor, porque él es bueno. La piedra que desecharon los edificadores ha venido a ser cabeza del ángulo.</texto>
+    </salmo>
+    <salmo>
+        <numero>119</numero>
+        <texto>Bienaventurados los perfectos de camino, los que andan en la ley del Señor. Lámpara es a mis pies tu palabra.</texto>
+    </salmo>
+    <salmo>
+        <numero>120</numero>
+        <texto>A la hora de mi angustia clamé al Señor, y él me respondió. Libra mi alma, oh Señor, del labio mentiroso.</texto>
+    </salmo>
+    <salmo>
+        <numero>121</numero>
+        <texto>Alzaré mis ojos a los montes; ¿de dónde vendrá mi socorro? Mi socorro viene del Señor, que hizo los cielos y la tierra.</texto>
+    </salmo>
+    <salmo>
+        <numero>122</numero>
+        <texto>Yo me alegré con los que me decían: A la casa del Señor iremos. Nuestros pies estuvieron dentro de tus puertas, oh Jerusalén.</texto>
+    </salmo>
+    <salmo>
+        <numero>123</numero>
+        <texto>A ti levanté mis ojos, a ti que habitas en los cielos. Como los ojos de los siervos miran a la mano de sus señores.</texto>
+    </salmo>
+    <salmo>
+        <numero>124</numero>
+        <texto>A no haber estado el Señor con nosotros, cuando se levantaron contra nosotros los hombres, vivos nos habrían tragado.</texto>
+    </salmo>
+    <salmo>
+        <numero>125</numero>
+        <texto>Los que confían en el Señor son como el monte de Sion, que no se mueve, sino que permanece para siempre.</texto>
+    </salmo>
+    <salmo>
+        <numero>126</numero>
+        <texto>Cuando el Señor hiciere volver la cautividad de Sion, seremos como los que sueñan. Los que sembraron con lágrimas, con regocijo segarán.</texto>
+    </salmo>
+    <salmo>
+        <numero>127</numero>
+        <texto>Si el Señor no edificare la casa, en vano trabajan los que la edifican. Herencia del Señor son los hijos.</texto>
+    </salmo>
+    <salmo>
+        <numero>128</numero>
+        <texto>Bienaventurado todo aquel que teme al Señor, que anda en sus caminos. Comerás del trabajo de tus manos.</texto>
+    </salmo>
+    <salmo>
+        <numero>129</numero>
+        <texto>Mucho me han angustiado desde mi juventud, puede decir ahora Israel; mas no prevalecieron contra mí.</texto>
+    </salmo>
+    <salmo>
+        <numero>130</numero>
+        <texto>De lo profundo, oh Señor, a ti clamo. Señor, oye mi voz. Si tú, Señor, miraras los pecados, ¿quién se mantendría?</texto>
+    </salmo>
+    <salmo>
+        <numero>131</numero>
+        <texto>Señor, no se ha envanecido mi corazón, ni mis ojos se enaltecieron. He sosegado y acallado mi alma.</texto>
+    </salmo>
+    <salmo>
+        <numero>132</numero>
+        <texto>Acuérdate, oh Señor, de David, y de toda su aflicción. No entraré en la morada de mi casa hasta hallar lugar para el Señor.</texto>
+    </salmo>
+    <salmo>
+        <numero>133</numero>
+        <texto>¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!</texto>
+    </salmo>
+    <salmo>
+        <numero>134</numero>
+        <texto>He aquí, bendecid al Señor, todos los siervos del Señor, los que en la casa del Señor estáis por las noches.</texto>
+    </salmo>
+    <salmo>
+        <numero>135</numero>
+        <texto>Alabad el nombre del Señor; alabadle, siervos del Señor. Porque yo sé que el Señor es grande.</texto>
+    </salmo>
+    <salmo>
+        <numero>136</numero>
+        <texto>Alabad al Señor, porque él es bueno; porque para siempre es su misericordia. Al que hizo los cielos con inteligencia.</texto>
+    </salmo>
+    <salmo>
+        <numero>137</numero>
+        <texto>Junto a los ríos de Babilonia, allí nos sentábamos, y aun llorábamos, acordándonos de Sion.</texto>
+    </salmo>
+    <salmo>
+        <numero>138</numero>
+        <texto>Te alabaré con todo mi corazón. El Señor cumplirá su propósito en mí; tu misericordia, oh Señor, es para siempre.</texto>
+    </salmo>
+    <salmo>
+        <numero>139</numero>
+        <texto>Oh Señor, tú me has examinado y conocido. Tú has conocido mi sentarme y mi levantarme; has entendido desde lejos mis pensamientos.</texto>
+    </salmo>
+    <salmo>
+        <numero>140</numero>
+        <texto>Líbrame, oh Señor, del hombre malo; guárdame de hombres violentos. Yo sé que el Señor tomará a su cargo la causa del afligido.</texto>
+    </salmo>
+    <salmo>
+        <numero>141</numero>
+        <texto>Señor, a ti he clamado; apresúrate a mí. Sea mi oración delante de ti como el incienso.</texto>
+    </salmo>
+    <salmo>
+        <numero>142</numero>
+        <texto>Con mi voz clamaré al Señor; con mi voz pediré al Señor misericordia. Delante de él expondré mi queja.</texto>
+    </salmo>
+    <salmo>
+        <numero>143</numero>
+        <texto>Oh Señor, oye mi oración, escucha mis ruegos por tu verdad. No entres en juicio con tu siervo.</texto>
+    </salmo>
+    <salmo>
+        <numero>144</numero>
+        <texto>Bendito sea el Señor, mi roca, quien adiestra mis manos para la batalla, y mis dedos para la guerra.</texto>
+    </salmo>
+    <salmo>
+        <numero>145</numero>
+        <texto>Te exaltaré, mi Dios, mi Rey, y bendeciré tu nombre por los siglos de los siglos. Grande es el Señor.</texto>
+    </salmo>
+    <salmo>
+        <numero>146</numero>
+        <texto>Alaba, alma mía, al Señor. Alabaré al Señor en mi vida; cantaré salmos a mi Dios mientras viva.</texto>
+    </salmo>
+    <salmo>
+        <numero>147</numero>
+        <texto>Alabad al Señor, porque es bueno cantar salmos a nuestro Dios. Él sana a los quebrantados de corazón.</texto>
+    </salmo>
+    <salmo>
+        <numero>148</numero>
+        <texto>Alabad al Señor desde los cielos; alabadle en las alturas. Alabadle, sol y luna; alabadle, todas las lucientes estrellas.</texto>
+    </salmo>
+    <salmo>
+        <numero>149</numero>
+        <texto>Cantad al Señor cántico nuevo; su alabanza sea en la congregación de los santos. Alégrese Israel en su Hacedor.</texto>
+    </salmo>
+    <salmo>
+        <numero>150</numero>
+        <texto>Todo lo que respira alabe al Señor. Aleluya. Alabadle en su santuario; alabadle en la magnificencia de su firmamento.</texto>
+    </salmo>
+</salmos>

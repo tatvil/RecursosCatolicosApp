@@ -107,4 +107,6 @@
     <string name="frase_teresa">\"Nada te turbe, nada te espante, todo se pasa, Dios no se muda.\"</string>
     <string name="autor_teresa">— Santa Teresa de Jesús</string>
     <string name="expandir_colapsar_seccion">Expandir/Colapsar sección</string>
+    <string name="salmo">Salmo</string>
+    <string name="salmo_1">Salmo 1</string>
 </resources>

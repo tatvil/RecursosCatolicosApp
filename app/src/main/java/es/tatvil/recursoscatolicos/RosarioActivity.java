@@ -37,28 +37,21 @@ public class RosarioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rosario);
 
-        // 2. Initialize Managers (MOVED TO THE TOP)
-        RosarioDataProvider dataProvider = new RosarioDataProvider(this);
-        // VVV FIX: INITIALIZE THE OBJECT VVV
-        rosarioLogicManager = new RosarioLogicManager(dataProvider);
-        rosarioAudioManager = new RosarioAudioManager(this);
-
-        // NOW IT'S SAFE TO USE THE MANAGER
-        rosarioLogicManager.resetRosario(); // This line is now safe, and this was line 39 in the original code.
-
         // 1. Initialize UI elements
         imageMisterio = findViewById(R.id.image_misterio);
         textNombreMisterio = findViewById(R.id.text_nombre_misterio);
         textOracionActual = findViewById(R.id.text_oracion_actual);
         layoutCuentasAveMaria = findViewById(R.id.layout_cuentas_avemaria);
         buttonSiguienteOracion = findViewById(R.id.button_siguiente_oracion);
-        btnPlayPause = findViewById(R.id.btn_play_pause); // Ensure this ID exists in your XML
-        textMisteriosTitulo = findViewById(R.id.text_misterios); // Assuming you have this TextView
+        btnPlayPause = findViewById(R.id.btn_play_pause);
+        textMisteriosTitulo = findViewById(R.id.text_misterios);
 
         // 2. Initialize Managers
-//        RosarioDataProvider dataProvider = new RosarioDataProvider(this);
+        RosarioDataProvider dataProvider = new RosarioDataProvider(this);
         rosarioLogicManager = new RosarioLogicManager(dataProvider);
         rosarioAudioManager = new RosarioAudioManager(this);
+
+        rosarioLogicManager.resetRosario();
 
         // Set listener for audio completion (optional, for auto-advance)
         rosarioAudioManager.setAudioCompletionListener(new RosarioAudioManager.AudioCompletionListener() {
