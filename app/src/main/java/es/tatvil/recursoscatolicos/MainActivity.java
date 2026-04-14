@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -42,10 +41,12 @@ public class MainActivity extends AppCompatActivity {
         btnDiario = findViewById(R.id.journal_card);
         quoteTextView = findViewById(R.id.quote_text);
         quoteAuthorTextView = findViewById(R.id.quote_author);
+//        labelLecturaTextView = findViewById(R.id.label_lectura);
+//        gospelSnippetTextView = findViewById(R.id.gospel_snippet);
 
-        // 2. Configuración de la Cabecera
         configurarFechaYSanto();
         configurarSalmoDelDia();
+        // configurarEvangelioDelDia();
 
         // 3. Configuración de Listeners
         configurarNavegacion();
@@ -103,6 +104,145 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+/*
+    private void configurarEvangelioDelDia() {
+        LocalDate hoy = LocalDate.now();
+        obtenerEvangelioAsync(hoy.getDayOfMonth(), hoy.getMonthValue());
+    }
+
+    private void obtenerEvangelioAsync(int dia, int mes) {
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        Handler handler = new Handler(Looper.getMainLooper());
+
+        executor.execute(() -> {
+            String[] resultado = obtenerEvangelioSincrono(dia, mes);
+            handler.post(() -> {
+                gospelSnippetTextView.setText(resultado[0]);
+                if (resultado[1] != null && !resultado[1].isEmpty()) {
+                    labelLecturaTextView.setText(getString(R.string.evangelio_hoy) + " (" + resultado[1] + ")");
+                }
+            });
+        });
+    }
+
+    private String[] obtenerEvangelioSincrono(int dia, int mes) {
+        String texto = "Referencia no encontrada en la Biblia offline.";
+        String cita = "";
+        int libroId = -1, capNum = -1;
+        String vRange = "";
+
+        // 1. Buscar la referencia en evangelios.xml
+        try (XmlResourceParser parser = getResources().getXml(R.xml.evangelios)) {
+            int eventType = parser.getEventType();
+            while (eventType != XmlResourceParser.END_DOCUMENT) {
+                if (eventType == XmlResourceParser.START_TAG && parser.getName().equals("dia")) {
+                    int m = parseAttributeInt(parser.getAttributeValue(null, "mes"));
+                    int d = parseAttributeInt(parser.getAttributeValue(null, "numero"));
+                    if (m == mes && d == dia) {
+                        cita = parser.getAttributeValue(null, "cita");
+                        libroId = parseAttributeInt(parser.getAttributeValue(null, "libro"));
+                        capNum = parseAttributeInt(parser.getAttributeValue(null, "capitulo"));
+                        vRange = parser.getAttributeValue(null, "versiculos");
+                        break;
+                    }
+                }
+                eventType = parser.next();
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Error al leer evangelios.xml: " + e.getMessage());
+        }
+
+        // 2. Si tenemos la referencia, buscar el texto en biblia.xml
+        if (libroId != -1 && capNum != -1) {
+            String textoBiblia = buscarTextoEnBiblia(libroId, capNum, vRange);
+            if (textoBiblia != null) texto = textoBiblia;
+        }
+
+        return new String[]{texto, cita};
+    }
+
+    private String buscarTextoEnBiblia(int libroId, int capNum, String vRange) {
+        StringBuilder sb = new StringBuilder();
+        // Intentamos cargar el archivo específico del libro (ej: libro1.xml)
+        int resId = getResources().getIdentifier("libro" + libroId, "xml", getPackageName());
+
+        // Si no existe el archivo individual, intentamos con el archivo general
+        if (resId == 0) {
+            resId = R.xml.biblia;
+        }
+
+        try (XmlResourceParser parser = getResources().getXml(resId)) {
+            int eventType = parser.getEventType();
+            boolean libroEncontrado = false;
+            boolean capituloEncontrado = false;
+
+            // Si el archivo es individual (ej: libro1.xml), el tag raíz es <book> o <bible>
+            // Ajustamos la lógica para que funcione en ambos casos
+            while (eventType != XmlResourceParser.END_DOCUMENT) {
+                if (eventType == XmlResourceParser.START_TAG) {
+                    String name = parser.getName();
+                    if (name.equals("book")) {
+                        // Si es el archivo general, comprobamos el número.
+                        // Si es el archivo individual, asumimos que es el correcto o comprobamos igual.
+                        String numAttr = parser.getAttributeValue(null, "number");
+                        if (numAttr == null || parseAttributeInt(numAttr) == libroId) {
+                            libroEncontrado = true;
+                        }
+                    } else if (libroEncontrado && name.equals("chapter")) {
+                        if (parseAttributeInt(parser.getAttributeValue(null, "number")) == capNum) {
+                            capituloEncontrado = true;
+                        }
+                    } else if (capituloEncontrado && name.equals("verse")) {
+                        int vNum = parseAttributeInt(parser.getAttributeValue(null, "number"));
+                        if (estaEnRango(vNum, vRange)) {
+                            parser.next();
+                            if (parser.getEventType() == XmlResourceParser.TEXT) {
+                                sb.append(parser.getText()).append(" ");
+                            }
+                        }
+                    }
+                } else if (eventType == XmlResourceParser.END_TAG) {
+                    String name = parser.getName();
+                    if (name.equals("book") && libroEncontrado) {
+                        // Si ya terminamos el libro en el archivo general, salimos
+                        if (resId == R.xml.biblia) libroEncontrado = false;
+                    }
+                    if (name.equals("chapter") && capituloEncontrado) {
+                        if (sb.length() > 0) return sb.toString().trim();
+                        capituloEncontrado = false;
+                    }
+                }
+                eventType = parser.next();
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Error al leer biblia: " + e.getMessage());
+        }
+        return sb.length() > 0 ? sb.toString().trim() : null;
+    }
+
+    private boolean estaEnRango(int vNum, String range) {
+        if (range == null || range.isEmpty()) return true;
+        try {
+            if (range.contains("-")) {
+                String[] parts = range.split("-");
+                int inicio = Integer.parseInt(parts[0]);
+                int fin = Integer.parseInt(parts[1]);
+                return vNum >= inicio && vNum <= fin;
+            } else if (range.contains(",")) {
+                String[] parts = range.split(",");
+                for (String p : parts) {
+                    if (Integer.parseInt(p.trim()) == vNum) return true;
+                }
+                return false;
+            } else {
+                return vNum == Integer.parseInt(range);
+            }
+        } catch (Exception e) {
+            return true;
+        }
+    }
+*/
+
     private void configurarNavegacion() {
         btnBiblia.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, BibliaActivity.class));
@@ -113,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnDiario.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, DiarioActivity.class));
+            startActivity(new Intent(MainActivity.this, DiarioNewItemActivity.class));
         });
     }
 

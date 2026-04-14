@@ -11,52 +11,31 @@
         android:id="@+id/tv_diario_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mi Diario con Dios"
+        android:text="Mi Diario"
         android:textColor="@color/soft_gold"
         android:textSize="24sp"
         android:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_diario_subtitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="¿Qué te dice el Señor hoy? Escribe aquí tus pensamientos o tu acción de gracias."
-        android:textColor="@color/text_secondary"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_diario_title" />
-
-    <EditText
-        android:id="@+id/et_reflexion"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDiario"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="32dp"
-        android:background="@color/dark_charcoal"
-        android:gravity="top|start"
-        android:hint="Querido Señor..."
-        android:padding="16dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/text_secondary"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_diario_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_diario_subtitle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_save"
+        android:id="@+id/fabAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:src="@android:drawable/ic_menu_save"
-        app:backgroundTint="@color/soft_gold"
+        android:contentDescription="@string/anadir_nueva_entrada"
+        android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/deep_night" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

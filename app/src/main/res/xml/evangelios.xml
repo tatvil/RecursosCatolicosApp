@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <evangelios>
-    <!-- Muestra de Evangelios 2025 (Ciclo C) -->
-    <dia mes="1" numero="1" cita="Lc 2, 16-21">En aquel tiempo, los pastores fueron corriendo y encontraron a María y a José, y al niño acostado en el pesebre.</dia>
-    <dia mes="1" numero="2" cita="Jn 1, 19-28">Este es el testimonio de Juan, cuando los judíos enviaron desde Jerusalén sacerdotes y levitas a Juan a que le preguntaran: «¿Tú quién eres?».</dia>
-    <dia mes="1" numero="12" cita="Lc 3, 15-16. 21-22">En aquel tiempo, el pueblo estaba en expectación, y todos se preguntaban en su interior sobre Juan, si no sería él el Mesías.</dia>
-    <dia mes="2" numero="1" cita="Mc 4, 35-41">Aquel día, al atardecer, dijo Jesús a sus discípulos: «Vamos a la otra orilla».</dia>
-    <dia mes="2" numero="2" cita="Lc 2, 22-40">Cuando se cumplieron los días de su purificación, según la ley de Moisés, lo llevaron a Jerusalén para presentarlo al Señor.</dia>
-    <dia mes="5" numero="15" cita="Jn 15, 9-11">Como el Padre me ha amado, así os he amado yo; permaneced en mi amor.</dia>
-    <dia mes="12" numero="25" cita="Jn 1, 1-18">En el principio existía el Verbo, y el Verbo estaba junto a Dios, y el Verbo era Dios.</dia>
-    <!-- ... Se puede completar con el resto del año ... -->
+    <!-- Referencias a la biblia por libro, capítulo y rango de versículos -->
+    <!-- libro: 1=Génesis, ..., 40=Mateo, 41=Marcos, 42=Lucas, 43=Juan (según orden estándar) -->
+    <dia mes="1" numero="1" libro="42" capitulo="2" versiculos="16-21" cita="Lc 2, 16-21" />
+    <dia mes="1" numero="2" libro="43" capitulo="1" versiculos="19-28" cita="Jn 1, 19-28" />
+    <dia mes="5" numero="15" libro="43" capitulo="15" versiculos="9-11" cita="Jn 15, 9-11" />
+    <dia mes="12" numero="25" libro="43" capitulo="1" versiculos="1-18" cita="Jn 1, 1-18" />
 </evangelios>
