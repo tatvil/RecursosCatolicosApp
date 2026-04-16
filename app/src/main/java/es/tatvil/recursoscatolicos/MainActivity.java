@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
-    private TextView fechaTextView;
-    private TextView santoDelDiaTextView;
     private TextView quoteTextView;
     private TextView quoteAuthorTextView;
     private CardView btnBiblia;
@@ -34,17 +32,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // 1. Inicialización de Vistas
-        fechaTextView = findViewById(R.id.fecha);
-        santoDelDiaTextView = findViewById(R.id.santodeldia);
         btnBiblia = findViewById(R.id.btn_biblia_card);
         btnRosario = findViewById(R.id.btn_rosario_card);
         btnDiario = findViewById(R.id.journal_card);
         quoteTextView = findViewById(R.id.quote_text);
         quoteAuthorTextView = findViewById(R.id.quote_author);
-//        labelLecturaTextView = findViewById(R.id.label_lectura);
-//        gospelSnippetTextView = findViewById(R.id.gospel_snippet);
 
-        configurarFechaYSanto();
         configurarSalmoDelDia();
         // configurarEvangelioDelDia();
 
@@ -253,58 +246,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnDiario.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, DiarioNewItemActivity.class));
+            startActivity(new Intent(MainActivity.this, DiarioActivity.class));
         });
-    }
-
-    private void configurarFechaYSanto() {
-        LocalDate hoy = LocalDate.now();
-        Locale localeEs = new Locale("es", "ES");
-
-        String diaSemana = hoy.getDayOfWeek().getDisplayName(TextStyle.FULL, localeEs);
-        String mesNombre = hoy.getMonth().getDisplayName(TextStyle.FULL, localeEs);
-        String diaSemanaCapitalized = diaSemana.substring(0, 1).toUpperCase() + diaSemana.substring(1);
-
-        String fechaFormateada = diaSemanaCapitalized +
-                ", " + hoy.getDayOfMonth() + " de " + mesNombre;
-
-        fechaTextView.setText(fechaFormateada);
-
-        obtenerSantoDelDiaAsync(hoy.getDayOfMonth(), hoy.getMonthValue());
-    }
-
-    private void obtenerSantoDelDiaAsync(int dia, int mes) {
-        ExecutorService executor = Executors.newSingleThreadExecutor();
-        Handler handler = new Handler(Looper.getMainLooper());
-
-        executor.execute(() -> {
-            String santo = obtenerSantoDelDiaSincrono(dia, mes);
-            handler.post(() -> {
-                santoDelDiaTextView.setText(santo);
-            });
-        });
-    }
-
-    private String obtenerSantoDelDiaSincrono(int dia, int mes) {
-        String santo = "Buscando Santo...";
-        try (XmlResourceParser parser = getResources().getXml(R.xml.santos)) {
-            int eventType = parser.getEventType();
-            while (eventType != XmlResourceParser.END_DOCUMENT) {
-                if (eventType == XmlResourceParser.START_TAG && parser.getName().equals("dia")) {
-                    int mesAtributo = parseAttributeInt(parser.getAttributeValue(null, "mes"));
-                    int diaAtributo = parseAttributeInt(parser.getAttributeValue(null, "numero"));
-                    if (mes == mesAtributo && dia == diaAtributo) {
-                        santo = parser.getAttributeValue(null, "santo");
-                        break;
-                    }
-                }
-                eventType = parser.next();
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "Error al leer santos.xml: " + e.getMessage());
-            santo = "Paz y Bien";
-        }
-        return santo;
     }
 
     private int parseAttributeInt(String value) {

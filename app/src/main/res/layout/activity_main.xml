@@ -13,57 +13,30 @@
         android:layout_height="wrap_content"
         android:paddingBottom="32dp">
 
-        <!-- GREETING SECTION -->
-        <TextView
-            android:id="@+id/greeting"
-            android:layout_width="wrap_content"
+        <!-- Cabecera Moderna (Clima, Santo, Usuario) -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_datos_container"
+            android:name="es.tatvil.recursoscatolicos.DatosFragment"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="64dp"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="28sp"
-            android:fontFamily="serif"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout="@layout/activity_datos_fragment" />
 
-        <TextView
-            android:id="@+id/fecha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="4dp"
-            tools:text="Jueves, 8 de Abril de 1971"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/greeting" />
-
-        <TextView
-            android:id="@+id/santodeldia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_secondary"
-            android:textSize="16sp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:text="Santa Tatiana"
-            app:layout_constraintTop_toBottomOf="@id/fecha"/>
-
-        <!-- QUOTE CARD (Intimate/Motivational) -->
+        <!-- QUOTE CARD (Salmo del día) -->
         <androidx.cardview.widget.CardView
             android:id="@+id/quote_card"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             app:cardBackgroundColor="@color/dark_charcoal"
             app:cardCornerRadius="16dp"
             app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/fecha">
+            app:layout_constraintTop_toBottomOf="@id/fragment_datos_container">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/salmo"
-                    android:textColor="@color/soft_gold"
+                    android:textColor="@color/celestial_blue"
                     android:textSize="12sp"
                     android:textStyle="bold"
                     android:textAllCaps="true"
@@ -103,12 +76,12 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- QUICK ACTIONS (Bible & Rosary) -->
+        <!-- Botones Principales -->
         <LinearLayout
             android:id="@+id/actions_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:orientation="horizontal"
             android:paddingHorizontal="20dp"
@@ -120,18 +93,17 @@
                 android:layout_height="100dp"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:cardBackgroundColor="@color/dark_charcoal"
                 app:cardCornerRadius="12dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground">
                 <TextView
-                    android:id="@+id/btn_biblia_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="BIBLIA"
-                    android:textColor="@color/prayer_cream"
+                    android:text="@string/biblia"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     android:letterSpacing="0.1" />
             </androidx.cardview.widget.CardView>
@@ -142,25 +114,24 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:cardBackgroundColor="@color/dark_charcoal"
                 app:cardCornerRadius="12dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground">
                 <TextView
-                    android:id="@+id/btn_rosario_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/rosario"
-                    android:textColor="@color/prayer_cream"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textAllCaps="true"
                     android:letterSpacing="0.1" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <!-- DIARIO DE ORACIÓN / ADORACIÓN -->
+        <!-- Diario de Oración -->
         <androidx.cardview.widget.CardView
             android:id="@+id/journal_card"
             android:layout_width="0dp"
@@ -188,7 +159,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@android:drawable/ic_menu_edit"
-                    app:tint="@color/soft_gold"
+                    app:tint="@color/celestial_blue"
                     android:contentDescription="@string/icono_diario" />
 
                 <LinearLayout
@@ -215,50 +186,5 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- EVANGELIO DEL DIA SECTION -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/gospel_card"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="24dp"
-            app:cardBackgroundColor="@color/dark_charcoal"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/journal_card">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:id="@+id/label_lectura"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Evangelio del día"
-                    android:textColor="@color/soft_gold"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:letterSpacing="0.1" />
-
-                <TextView
-                    android:id="@+id/gospel_snippet"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="..."
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:maxLines="4"
-                    android:ellipsize="end"
-                    android:fontFamily="serif" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

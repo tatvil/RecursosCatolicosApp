@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/deep_night"
@@ -11,8 +12,8 @@
         android:id="@+id/tv_diario_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mi Diario"
-        android:textColor="@color/soft_gold"
+        android:text="@string/mi_diario"
+        android:textColor="@color/celestial_blue"
         android:textSize="24sp"
         android:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,11 +23,12 @@
         android:id="@+id/recyclerViewDiario"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="@id/tv_diario_title"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_diario_title" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
@@ -35,6 +37,8 @@
         android:layout_margin="16dp"
         android:contentDescription="@string/anadir_nueva_entrada"
         android:src="@drawable/ic_add"
+        app:backgroundTint="@color/soft_gold"
+        app:tint="@color/deep_night"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

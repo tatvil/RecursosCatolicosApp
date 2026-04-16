@@ -99,8 +99,8 @@ public class BibliaActivity extends AppCompatActivity {
             put(1, R.array.genesis_chapter_1);
         }});
         bibleData.put("Salmos", new HashMap<Integer, Integer>() {{
-            put(23, R.array.salmos_chapter_23);
-            put(91, R.array.salmos_chapter_91);
+            put(23, R.array.salmos_chapter_1);
+            put(91, R.array.salmos_chapter_2);
         }});
     }
 
