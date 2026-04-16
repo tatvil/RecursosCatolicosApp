@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Recursos Católicos</string>
+    <string name="app_name">\{ \@tatvil \}</string>
     <string name="siguiente_versiculo">Siguiente versiculo</string>
     <string name="versiculo_de_la_biblia">Versiculo de la biblia</string>
     <string name="angelus">El ángel del Señor anunció a María. Y concibió por obra del Espíritu Santo.\n\nHe aquí la sierva del Señor. Hágase en mí según tu palabra.</string>
@@ -112,4 +112,5 @@
     <string name="fecha_actual">Jueves, 8 de abril de 1971</string>
     <string name="ubicacion_desconocida">Ubicación desconocida</string>
     <string name="cargando_clima">Cargando clima ...\n</string>
+    <string name="ubicacion">Ubicación</string>
 </resources>

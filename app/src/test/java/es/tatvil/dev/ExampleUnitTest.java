@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos;
+package es.tatvil.dev;
 
 import org.junit.Test;
 

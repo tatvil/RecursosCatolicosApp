@@ -1,8 +1,6 @@
 package es.tatvil.dev;
 
 import android.Manifest;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.XmlResourceParser;
 import android.location.Address;
@@ -16,11 +14,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
@@ -58,8 +54,7 @@ public class DatosFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_datos_fragment, container, false);
 
         tvFecha = view.findViewById(R.id.tvFecha);
@@ -102,7 +97,7 @@ public class DatosFragment extends Fragment {
         }
     }
 
-    public void busquedaUbicacion() {
+    private void busquedaUbicacion() {
         if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) return;
 
         FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext());
@@ -136,9 +131,7 @@ public class DatosFragment extends Fragment {
         Request requestActual = new Request.Builder().url(urlActual).build();
         client.newCall(requestActual).enqueue(new Callback() {
             @Override
-            public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                Log.e(TAG, "Error clima actual", e);
-            }
+            public void onFailure(@NonNull Call call, @NonNull IOException e) { Log.e(TAG, "Error clima", e); }
             @Override
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 if (response.isSuccessful() && response.body() != null) {
@@ -147,19 +140,17 @@ public class DatosFragment extends Fragment {
                         double temp = json.getJSONObject("main").getDouble("temp");
                         String desc = json.getJSONArray("weather").getJSONObject(0).getString("description");
                         handler.post(() -> tvClima.setText("Ahora: " + Math.round(temp) + "°C, " + desc));
-                    } catch (Exception e) { Log.e(TAG, "Error JSON clima actual", e); }
+                    } catch (Exception e) { Log.e(TAG, "Error JSON actual", e); }
                 }
             }
         });
 
-        // 2. Predicción Hoy y Mañana
+        // 2. Predicción
         String urlForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + ciudad + "&units=metric&lang=es&appid=" + API_KEY;
         Request requestForecast = new Request.Builder().url(urlForecast).build();
         client.newCall(requestForecast).enqueue(new Callback() {
             @Override
-            public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                Log.e(TAG, "Error predicción", e);
-            }
+            public void onFailure(@NonNull Call call, @NonNull IOException e) { Log.e(TAG, "Error predicción", e); }
             @Override
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 if (response.isSuccessful() && response.body() != null) {
@@ -167,34 +158,28 @@ public class DatosFragment extends Fragment {
                         JSONObject json = new JSONObject(response.body().string());
                         JSONArray list = json.getJSONArray("list");
 
-                        // Para hoy (máx/mín de las próximas 12 horas)
-                        double minHoy = Double.MAX_VALUE;
-                        double maxHoy = Double.MIN_VALUE;
-                        for (int i = 0; i < 4; i++) { // Próximas 12h (3h * 4)
-                            JSONObject obj = list.getJSONObject(i).getJSONObject("main");
-                            minHoy = Math.min(minHoy, obj.getDouble("temp_min"));
-                            maxHoy = Math.max(maxHoy, obj.getDouble("temp_max"));
+                        // Min/Max Hoy (Próximas 12h)
+                        double minHoy = Double.MAX_VALUE, maxHoy = Double.MIN_VALUE;
+                        for (int i = 0; i < 4; i++) {
+                            JSONObject m = list.getJSONObject(i).getJSONObject("main");
+                            minHoy = Math.min(minHoy, m.getDouble("temp_min"));
+                            maxHoy = Math.max(maxHoy, m.getDouble("temp_max"));
                         }
 
-                        // Para mañana (+24h aprox, índices 8 a 15)
-                        double minMan = Double.MAX_VALUE;
-                        double maxMan = Double.MIN_VALUE;
+                        // Min/Max Mañana (Próximas 24-48h)
+                        double minMan = Double.MAX_VALUE, maxMan = Double.MIN_VALUE;
                         for (int i = 8; i < 16; i++) {
-                            JSONObject obj = list.getJSONObject(i).getJSONObject("main");
-                            minMan = Math.min(minMan, obj.getDouble("temp_min"));
-                            maxMan = Math.max(maxMan, obj.getDouble("temp_max"));
+                            JSONObject m = list.getJSONObject(i).getJSONObject("main");
+                            minMan = Math.min(minMan, m.getDouble("temp_min"));
+                            maxMan = Math.max(maxMan, m.getDouble("temp_max"));
                         }
 
-                        double finalMinHoy = minHoy;
-                        double finalMaxHoy = maxHoy;
-                        double finalMinMan = minMan;
-                        double finalMaxMan = maxMan;
-
+                        final double fMinH = minHoy, fMaxH = maxHoy, fMinM = minMan, fMaxM = maxMan;
                         handler.post(() -> {
-                            tvPrediccionHoy.setText("Hoy: m" + Math.round(finalMinHoy) + "° / M" + Math.round(finalMaxHoy) + "°");
-                            tvPrediccionManana.setText("Mañana: m" + Math.round(finalMinMan) + "° / M" + Math.round(finalMaxMan) + "°");
+                            tvPrediccionHoy.setText("Hoy: " + Math.round(fMinH) + "° / " + Math.round(fMaxH) + "°");
+                            tvPrediccionManana.setText("Mañana: " + Math.round(fMinM) + "° / " + Math.round(fMaxM) + "°");
                         });
-                    } catch (Exception e) { Log.e(TAG, "Error JSON predicción", e); }
+                    } catch (Exception e) { Log.e(TAG, "Error JSON forecast", e); }
                 }
             }
         });
@@ -216,8 +201,8 @@ public class DatosFragment extends Fragment {
                     eventType = parser.next();
                 }
             } catch (Exception e) { Log.e(TAG, "Error XML", e); }
-            String finalSanto = santo;
-            handler.post(() -> tvSantoDelDia.setText(finalSanto));
+            final String s = santo;
+            handler.post(() -> tvSantoDelDia.setText(s));
         });
     }
 }

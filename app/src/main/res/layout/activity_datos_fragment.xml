@@ -12,11 +12,12 @@
         android:id="@+id/tvNombreUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="{@tatvil}"
+        android:text="@string/app_name"
         android:textColor="@color/color_primario"
         android:textSize="22sp"
         android:fontFamily="monospace"
         android:textStyle="bold"
+        android:layout_marginTop="4dp"
         android:gravity="center" />
 
     <TextView
@@ -26,7 +27,7 @@
         android:layout_marginTop="4dp"
         android:text="Jueves, 8 de abril de 1071"
         android:textColor="@color/color_acento"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:fontFamily="monospace"
         android:gravity="center" />
 
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:textColor="@color/vscode_comment"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:fontFamily="monospace"
         android:gravity="center"
         tools:text="Santa Tatiana" />
@@ -58,9 +59,9 @@
             android:id="@+id/tvUbicacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ubicación"
+            android:text="@string/ubicacion"
             android:textColor="@color/vscode_var"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:fontFamily="monospace"
             android:textStyle="bold"
             android:gravity="center" />
@@ -70,9 +71,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Cargando clima..."
+            android:text="@string/cargando_clima"
             android:textColor="@color/color_texto"
-            android:textSize="12sp"
+            android:textSize="16sp"
             android:fontFamily="monospace"
             android:gravity="center" />
 
@@ -82,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:textColor="@color/vscode_comment"
-            android:textSize="11sp"
+            android:textSize="16sp"
             android:fontFamily="monospace"
             android:gravity="center"
             tools:text="Hoy: 18°C / 24°C" />
@@ -93,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
             android:textColor="@color/vscode_comment"
-            android:textSize="11sp"
+            android:textSize="16sp"
             android:fontFamily="monospace"
             android:gravity="center"
             tools:text="Mañana: 17°C / 22°C" />
