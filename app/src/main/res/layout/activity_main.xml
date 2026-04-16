@@ -16,7 +16,7 @@
         <!-- Cabecera Moderna (Clima, Santo, Usuario) -->
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment_datos_container"
-            android:name="es.tatvil.recursoscatolicos.DatosFragment"
+            android:name="es.tatvil.dev.DatosFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"

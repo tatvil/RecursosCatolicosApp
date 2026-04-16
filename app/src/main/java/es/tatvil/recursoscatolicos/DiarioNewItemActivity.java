@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos;
+package es.tatvil.dev;
 
 import android.content.Context;
 import android.content.SharedPreferences;

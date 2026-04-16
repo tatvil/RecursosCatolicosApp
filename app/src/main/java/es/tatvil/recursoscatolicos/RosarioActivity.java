@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos;
+package es.tatvil.dev;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 // Importaciones de las nuevas clases
-import es.tatvil.recursoscatolicos.audio.RosarioAudioManager;
-import es.tatvil.recursoscatolicos.data.RosarioDataProvider;
-import es.tatvil.recursoscatolicos.logic.RosarioLogicManager;
-import es.tatvil.recursoscatolicos.model.Oracion;
-import es.tatvil.recursoscatolicos.model.Misterio;
+import es.tatvil.dev.audio.RosarioAudioManager;
+import es.tatvil.dev.data.RosarioDataProvider;
+import es.tatvil.dev.logic.RosarioLogicManager;
+import es.tatvil.dev.model.Oracion;
+import es.tatvil.dev.model.Misterio;
 
 public class RosarioActivity extends AppCompatActivity {
 

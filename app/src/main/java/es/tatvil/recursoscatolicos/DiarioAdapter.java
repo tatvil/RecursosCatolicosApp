@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos;
+package es.tatvil.dev;
 
 import android.view.LayoutInflater;
 import android.view.View;

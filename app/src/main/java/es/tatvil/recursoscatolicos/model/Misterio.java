@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos.model;
+package es.tatvil.dev.model;
 
 
 public class Misterio {

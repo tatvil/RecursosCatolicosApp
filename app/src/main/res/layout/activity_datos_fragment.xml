@@ -5,67 +5,98 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/color_fondo"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:gravity="center_horizontal">
 
     <TextView
         android:id="@+id/tvNombreUsuario"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tatiana Villa"
+        android:text="{@tatvil}"
         android:textColor="@color/color_primario"
-        android:textSize="26sp"
-        android:fontFamily="serif"
-        android:textStyle="bold" />
+        android:textSize="22sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/tvFecha"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Jueves, 8 de abril de 1071"
         android:textColor="@color/color_acento"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/tvSantodeldia"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:textColor="@color/vscode_comment"
         android:textSize="14sp"
-        tools:text="Santo del día: San Francisco" />
+        android:fontFamily="monospace"
+        android:gravity="center"
+        tools:text="Santa Tatiana" />
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="1dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/vscode_border" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/tvUbicacion"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Ubicación desconocida"
+            android:text="Ubicación"
             android:textColor="@color/vscode_var"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:gravity="center" />
 
         <TextView
             android:id="@+id/tvClima"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:text="Cargando clima..."
             android:textColor="@color/color_texto"
-            android:textSize="13sp"
-            android:gravity="end" />
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvPrediccionHoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/vscode_comment"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            tools:text="Hoy: 18°C / 24°C" />
+
+        <TextView
+            android:id="@+id/tvPrediccionManana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/vscode_comment"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            tools:text="Mañana: 17°C / 22°C" />
     </LinearLayout>
 
 </LinearLayout>

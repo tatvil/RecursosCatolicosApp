@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos.data;
+package es.tatvil.dev.data;
 
 
 import android.content.Context; // ¡Importar Context!
@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import es.tatvil.recursoscatolicos.R;
-import es.tatvil.recursoscatolicos.model.Misterio;
-import es.tatvil.recursoscatolicos.model.Oracion;
+import es.tatvil.dev.R;
+import es.tatvil.dev.model.Misterio;
+import es.tatvil.dev.model.Oracion;
 
 public class RosarioDataProvider {
 
@@ -60,8 +60,8 @@ public class RosarioDataProvider {
 
     private List<Misterio> getGozososInternal() {
         return Arrays.asList(
-                new Misterio("1. La Anunciación", R.drawable.gozosos1, new Oracion(context.getString(R.string.gozoso_1_meditacion), R.raw.gozoso_1_meditacion, false, "MEDITACION")),
-                new Misterio("2. La Visitación", R.drawable.gozosos2, new Oracion(context.getString(R.string.gozoso_2_meditacion), R.raw.gozoso_2_meditacion, false, "MEDITACION"))
+//                new Misterio("1. La Anunciación", R.drawable.gozosos1, new Oracion(context.getString(R.string.gozoso_1_meditacion), R.raw.gozoso_1_meditacion, false, "MEDITACION")),
+//                new Misterio("2. La Visitación", R.drawable.gozosos2, new Oracion(context.getString(R.string.gozoso_2_meditacion), R.raw.gozoso_2_meditacion, false, "MEDITACION"))
  //               new Misterio("3. El Nacimiento de Jesús", R.drawable.gozosos3, new Oracion(context.getString(R.string.gozoso_3_meditacion), R.raw.gozoso_3_meditacion, false, "MEDITACION")),
  //               new Misterio("4. La Presentación de Jesús en el Templo", R.drawable.gozosos4, new Oracion(context.getString(R.string.gozoso_4_meditacion), R.raw.gozoso_4_meditacion, false, "MEDITACION")),
  //               new Misterio("5. El Niño Jesús en el Templo", R.drawable.gozosos5, new Oracion(context.getString(R.string.gozoso_5_meditacion), R.raw.gozoso_5_meditacion, false, "MEDITACION"))

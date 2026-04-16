@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos.logic;
+package es.tatvil.dev.logic;
 
 import android.util.Log;
 
@@ -6,10 +6,10 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.List;
 
-import es.tatvil.recursoscatolicos.data.RosarioDataProvider;
-import es.tatvil.recursoscatolicos.model.Misterio;
-import es.tatvil.recursoscatolicos.model.Oracion;
-import es.tatvil.recursoscatolicos.R; // Asegúrate de que esta importación sea correcta para acceder a R.drawable
+import es.tatvil.dev.data.RosarioDataProvider;
+import es.tatvil.dev.model.Misterio;
+import es.tatvil.dev.model.Oracion;
+import es.tatvil.dev.R; // Asegúrate de que esta importación sea correcta para acceder a R.drawable
 
 public class RosarioLogicManager {
 

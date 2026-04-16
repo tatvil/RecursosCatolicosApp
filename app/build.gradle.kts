@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "es.tatvil.recursoscatolicos"
+    namespace = "es.tatvil.dev"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "es.tatvil.recursoscatolicos.dev"
+        applicationId = "es.tatvil.dev"
         minSdk = 28
         targetSdk = 36
         versionCode = 1

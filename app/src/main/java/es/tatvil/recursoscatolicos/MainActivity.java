@@ -1,4 +1,4 @@
-package es.tatvil.recursoscatolicos;
+package es.tatvil.dev;
 
 import android.content.Intent;
 import android.content.res.XmlResourceParser;

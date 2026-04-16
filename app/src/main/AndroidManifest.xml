@@ -18,19 +18,19 @@
         android:theme="@style/Theme.Recursoscatolicos">
 
         <activity
-            android:name=".DiarioActivity"
+            android:name="es.tatvil.dev.DiarioActivity"
             android:exported="false" />
         <activity
-            android:name=".DiarioNewItemActivity"
+            android:name="es.tatvil.dev.DiarioNewItemActivity"
             android:exported="false" />
         <activity
-            android:name=".RosarioActivity"
+            android:name="es.tatvil.dev.RosarioActivity"
             android:exported="false" />
         <activity
-            android:name=".BibliaActivity"
+            android:name="es.tatvil.dev.BibliaActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="es.tatvil.dev.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
